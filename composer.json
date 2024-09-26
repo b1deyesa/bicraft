@@ -15,6 +15,14 @@
             "Bideyesa\\Bicraft\\": "."
         }
     },
+    "scripts": {
+        "post-install-cmd": [
+            "php artisan vendor:publish --tag=bicraft"
+        ],
+        "post-update-cmd": [
+            "php artisan vendor:publish --tag=bicraft"
+        ]
+    },
     "extra": {
         "laravel": {
             "providers": [
