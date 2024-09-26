@@ -1,0 +1,142 @@
+.table {
+    display        : flex;
+    flex-direction : column;
+    
+    .loading {
+        display         : flex;
+        justify-content : center;
+        width           : 100%;
+    }
+    
+    .display {
+        display : none;
+    }
+    
+    .dt-container {
+        display        : flex;
+        flex-direction : column;
+        gap            : $spacing-6;
+        
+        .dt-layout-row {
+            display         : flex;
+            justify-content : space-between;
+            
+            .dt-search {
+                width : 300px;
+                label {
+                    display : none;
+                }
+                input {
+                    line-height   : $line-height-normal;
+                    height        : 44px;
+                    width         : 100%;
+                    padding       : $spacing-4;
+                    outline       : none;
+                    border-radius : $radius-normal;
+                    border-width  : $stroke-normal;
+                    border-style  : solid;
+                    border-color  : $transparancy-dark-40;
+                    background    : transparent;
+                    color         : $dark-normal;
+                    overflow      : hidden;
+                    &::placeholder {
+                        opacity : 50%;
+                    }
+                    &:focus {
+                        border-color : $transparancy-dark-70;
+                    }
+                }
+            }
+        }
+        
+        .dt-layout-full {
+            width : 100%;
+            
+            th {
+                font-family         : inherit;
+                font-size           : $font-size-10;
+                font-weight         : $font-weight-regular;
+                text-align          : start;
+                padding             : $spacing-3;
+                border-bottom-width : $stroke-normal;
+                border-bottom-style : solid;
+                border-bottom-color : $transparancy-dark-30;
+                color               : $transparancy-dark-50;
+                cursor              : pointer;
+            }
+            
+            td {
+                font-family         : inherit;
+                font-size           : $font-size-8;
+                font-weight         : $font-weight-regular;
+                text-align          : start;
+                padding             : $spacing-3;
+                border-bottom-width : $stroke-normal;
+                border-bottom-style : solid;
+                border-bottom-color : $transparancy-dark-10;
+                color               : $dark-normal;
+                
+                &.dt-empty {
+                    font-size  : $font-size-10;
+                    text-align : center;
+                    padding    : $spacing-8 $spacing-2;
+                    color      : $transparancy-dark-50;
+                }
+                
+                .action {
+                    display : flex;
+                    gap     : $spacing-3;
+                }
+            }
+        }
+    }
+    
+    .dt-paging {
+        nav {
+            display : flex;
+            gap     : $spacing-2;
+        }
+        button {
+            all             : unset;
+            display         : flex;
+            flex-direction  : row;
+            align-items     : center;
+            justify-content : center;
+            font-size       : $font-size-9;
+            line-height     : $line-height-normal;
+            height          : 28px;
+            aspect-ratio    : 1/1;
+            padding         : $spacing-3;
+            border-radius   : $radius-normal;
+            border          : $stroke-normal solid $transparancy-dark-5;
+            background      : $light-dark;
+            color           : $dark-normal;
+            cursor          : pointer;
+            user-select     : none;
+            box-sizing      : border-box;
+            outline         : none;
+            &.previous, 
+            &.next {
+                background : transparent;
+            }
+            &.current {
+                background : $dark-normal;
+                color      : $light-dark;
+            }
+        }
+        .ellipsis {
+            display         : flex;
+            flex-direction  : row;
+            align-items     : center;
+            justify-content : center;
+            font-size       : $font-size-9;
+            height          : 28px;
+            aspect-ratio    : 1/1;
+            padding         : $spacing-3;
+            border-radius   : $radius-normal;
+            background      : $transparancy-dark-10;
+            color           : $light-dark;
+            cursor          : not-allowed;
+        }
+    }
+}

@@ -1,0 +1,197 @@
+a.button,
+.button {
+    all             : unset;
+    display         : flex;
+    flex-direction  : row;
+    align-items     : center;
+    justify-content : center;
+    line-height     : $line-height-normal;
+    gap             : $spacing-2;
+    height          : 44px;
+    width           : fit-content;
+    padding         : $spacing-4;
+    border-radius   : $radius-normal;
+    background      : $dark-normal;
+    color           : $light-light;
+    cursor          : pointer;
+    user-select     : none;
+    box-sizing      : border-box;
+    outline         : none;
+    /*
+    | ------------------------------------------
+    |   Icon
+    | ------------------------------------------
+    */
+        &.icon-only i {
+            display         : flex;
+            align-items     : center;
+            justify-content : center;
+            aspect-ratio    : 1/1;
+            font-size       : $icon-size-medium;
+            width           : $icon-size-medium;
+        }
+    /*
+    | ------------------------------------------
+    |   Type
+    | ------------------------------------------
+    */
+        &:hover {
+            opacity : 80%;
+            outline : none;
+        }
+        &:active {
+            outline    : none;
+            opacity    : 100%;
+            outline    : none;
+            background : $dark-dark;
+        }
+        &:focus {
+            outline-width : 3px;
+            outline-style : solid;
+            outline-color : $transparancy-dark-50;
+        }
+        &:disabled,
+        &.disabled {
+            opacity : 30%;
+            cursor  : not-allowed;
+        }
+    /*
+    | ------------------------------------------
+    |   Size
+    | ------------------------------------------
+    */
+        &.medium {
+            height  : 36px;
+            padding : $spacing-3;
+        }
+        &.small {
+            font-size : $font-size-9;
+            height    : 28px;
+            padding   : $spacing-2 $spacing-3;
+            &.icon-only {
+                width     : 28px;
+                padding   : $spacing-2;
+                i {
+                    font-size : $icon-size-normal;
+                    width     : $icon-size-normal;
+                    height    : $icon-size-normal;
+                }
+            }
+        }
+    /*
+    | ------------------------------------------
+    |   Color
+    | ------------------------------------------
+    */
+        &.primary {
+            background : $primary-normal;
+            &:active {
+                background : $primary-dark;
+            }
+            &:focus {
+                outline-color : $primary-light;
+            }
+        }
+        &.secondary {
+            background : $secondary-normal;
+            &:active {
+                background : $secondary-dark;
+            }
+            &:focus {
+                outline-color : $secondary-light;
+            }
+        }
+        &.tertiary {
+            background : $tertiary-normal;
+            &:active {
+                background : $tertiary-dark;
+            }
+            &:focus {
+                outline-color : $tertiary-light;
+            }
+        }
+    /*
+    | ------------------------------------------
+    |   Outline
+    | ------------------------------------------
+    */    
+        &.outline {
+            border-width : $stroke-normal;
+            border-style : solid;
+            border-color : $dark-normal;
+            background   : transparent;
+            color        : $dark-normal;
+            &:active {
+                border-color : $dark-dark;
+                background   : transparent;
+            }
+            &:focus {
+                outline-color : $dark-light;
+                background    : transparent;
+            }
+            &.primary {
+                border-color : $primary-normal;
+                color        : $primary-normal;
+                &:active {
+                    border-color : $primary-dark;
+                }
+                &:focus {
+                    outline-color : $primary-light;
+                }
+            }
+            &.secondary {
+                border-color : $secondary-normal;
+                color        : $secondary-normal;
+                &:active {
+                    border-color : $secondary-dark;
+                }
+                &:focus {
+                    outline-color : $secondary-light;
+                }
+            }
+            &.tertiary {
+                border-color : $tertiary-normal;
+                color        : $tertiary-normal;
+                &:active {
+                    border-color : $tertiary-dark;
+                }
+                &:focus {
+                    outline-color : $tertiary-light;
+                }
+            }
+        }
+    /*
+    | ------------------------------------------
+    |   Borderless
+    | ------------------------------------------
+    */  
+        &.borderless {
+            background : transparent;
+            color      : $dark-normal;
+            &:active {
+                background : transparent;
+                color      : $dark-dark;
+            }
+            &:focus {
+                opacity : 70%;
+            }
+            &.primary {
+                color : $primary-normal;
+                &:active {
+                    color : $primary-dark;
+                }
+            }
+            &.secondary {
+                color : $secondary-normal;
+                &:active {
+                    color : $secondary-dark;
+                }
+            }
+            &.tertiary {
+                color : $tertiary-normal;
+                &:active {
+                    color : $tertiary-dark;
+                }
+            }
+        }
+}

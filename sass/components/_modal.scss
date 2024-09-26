@@ -1,0 +1,29 @@
+.modal {
+    position        : fixed;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    top             : 0;
+    right           : 0;
+    bottom          : 0;
+    left            : 0;
+    background      : #000000CC;
+    backdrop-filter : blur(2px);
+    .modal-container {
+        display        : flex;
+        flex-direction : column;
+        padding        : $spacing-4;
+        border-radius  : $radius-medium;
+        background     : $light-normal;
+        box-sizing     : border-box;
+        .modal-empty {
+            display         : flex;
+            align-items     : center;
+            justify-content : center;
+            font-size       : $font-size-10;
+            height          : 8em;
+            width           : 19em;
+            color           : $transparancy-dark-30;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "name": "bideyesa/bicraft",
+    "description": "UI Library",
+    "version": "1.0.0",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Imagodeo Bideyesa",
+            "email": "bideyesa@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Bideyesa\\Bicraft\\": "."
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bideyesa\\Bicraft\\BicraftServiceProvider"
+            ],
+            "aliases": []
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

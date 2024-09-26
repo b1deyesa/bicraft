@@ -1,0 +1,312 @@
+/*
+| ------------------------------------------
+|   Font Family
+| ------------------------------------------
+*/
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+    $font-family-serif      : "DM Serif Display", serif;
+    $font-family-sans-serif : "Inter", sans-serif;
+    $font-family-monospace  : "Roboto Mono", monospace;
+    $font-family-script     : "Dancing Script", cursive;
+/*
+| ------------------------------------------
+|   Font Size
+| ------------------------------------------
+*/
+    $font-size-1  : 72px;
+    $font-size-2  : 60px;
+    $font-size-3  : 48px;
+    $font-size-4  : 36px;
+    $font-size-5  : 30px;
+    $font-size-6  : 24px;
+    $font-size-7  : 18px;
+    $font-size-8  : 16px;
+    $font-size-9  : 14px;
+    $font-size-10 : 13px;
+/*
+| ------------------------------------------
+|   Font Weight
+| ------------------------------------------
+*/
+    $font-weight-light     : 200;
+    $font-weight-regular   : 400;
+    $font-weight-semi-bold : 600;
+    $font-weight-bold      : 700;
+    $font-weight-black     : 900;
+/*
+| ------------------------------------------
+|   Line Height
+| ------------------------------------------
+*/
+    $line-height-tight  : 1;
+    $line-height-normal : 1.2;
+    $line-height-loose  : 1.6;
+/*
+| ------------------------------------------
+|   Icon Size
+| ------------------------------------------
+*/
+    $icon-size-small  : 14px;
+    $icon-size-normal : 16px;
+    $icon-size-medium : 20px;
+    $icon-size-large  : 32px;
+/*
+| ------------------------------------------
+|   Stroke
+| ------------------------------------------
+*/   
+    $stroke-small  : 0.6px;
+    $stroke-normal : 0.8px;
+    $stroke-medium : 1px;
+    $stroke-large  : 1.5px;
+/*
+| ------------------------------------------
+|   Radius
+| ------------------------------------------
+*/
+    $radius-small  : 2px;
+    $radius-medium : 8px;
+    $radius-large  : 16px;
+    $radius-normal : 4px;
+    $radius-pill   : 9999px;
+    $radius-circle : 50%;
+/*
+| ------------------------------------------
+|   Radius
+| ------------------------------------------
+*/
+    $spacing-1  : 2px;
+    $spacing-2  : 4px;
+    $spacing-3  : 8px;
+    $spacing-4  : 12px;
+    $spacing-5  : 16px;
+    $spacing-6  : 24px;
+    $spacing-7  : 32px;
+    $spacing-8  : 40px;
+    $spacing-9  : 56px;
+    $spacing-10 : 72px;
+/*
+| ------------------------------------------
+|   Colors
+| ------------------------------------------
+*/
+    $crimson-50  : #fdeaee;
+    $crimson-100 : #f9bfcb;
+    $crimson-200 : #f595a8;
+    $crimson-300 : #f16a85;
+    $crimson-400 : #ee4063;
+    $crimson-500 : #ea1540;
+    $crimson-600 : #bf1134;
+    $crimson-700 : #950e29;
+    $crimson-800 : #6a0a1d;
+    $crimson-900 : #400611;
+    $crimson-950 : #150206;
+
+    $red-50  : #ffe8e8;
+    $red-100 : #ffb9b9;
+    $red-200 : #ff8b8b;
+    $red-300 : #ff5d5d;
+    $red-400 : #ff2e2e;
+    $red-500 : #ff0000;
+    $red-600 : #d10000;
+    $red-700 : #a20000;
+    $red-800 : #740000;
+    $red-900 : #460000;
+    $red-950 : #170000;
+
+    $deep-pink-50  : #ffe8f4;
+    $deep-pink-100 : #ffb9df;
+    $deep-pink-200 : #ff8bca;
+    $deep-pink-300 : #ff5db4;
+    $deep-pink-400 : #ff2e9f;
+    $deep-pink-500 : #ff008a;
+    $deep-pink-600 : #d10071;
+    $deep-pink-700 : #a20058;
+    $deep-pink-800 : #74003f;
+    $deep-pink-900 : #460026;
+    $deep-pink-950 : #17000d;
+
+    $orange-red-50  : #ffeee8;
+    $orange-red-100 : #ffccb9;
+    $orange-red-200 : #ffaa8b;
+    $orange-red-300 : #ff895d;
+    $orange-red-400 : #ff672e;
+    $orange-red-500 : #ff4500;
+    $orange-red-600 : #d13800;
+    $orange-red-700 : #a22c00;
+    $orange-red-800 : #741f00;
+    $orange-red-900 : #461300;
+    $orange-red-950 : #170600;
+
+    $orange-50  : #fff7e8;
+    $orange-100 : #ffe6b9;
+    $orange-200 : #ffd68b;
+    $orange-300 : #ffc65d;
+    $orange-400 : #ffb52e;
+    $orange-500 : #ffa500;
+    $orange-600 : #d18700;
+    $orange-700 : #a26900;
+    $orange-800 : #744b00;
+    $orange-900 : #462d00;
+    $orange-950 : #170f00;
+
+    $gold-50  : #fffbe8;
+    $gold-100 : #fff4b9;
+    $gold-200 : #ffed8b;
+    $gold-300 : #ffe65d;
+    $gold-400 : #ffde2e;
+    $gold-500 : #ffd700;
+    $gold-600 : #d1b000;
+    $gold-700 : #a28900;
+    $gold-800 : #746200;
+    $gold-900 : #463b00;
+    $gold-950 : #171400;
+
+    $yellow-50  : #ffffe8;
+    $yellow-100 : #ffffb9;
+    $yellow-200 : #ffff8b;
+    $yellow-300 : #ffff5d;
+    $yellow-400 : #ffff2e;
+    $yellow-500 : #ffff00;
+    $yellow-600 : #d1d100;
+    $yellow-700 : #a2a200;
+    $yellow-800 : #747400;
+    $yellow-900 : #464600;
+    $yellow-950 : #171700;
+
+    $khaki-50  : #fcfbea;
+    $khaki-100 : #f7f2c1;
+    $khaki-200 : #f2e998;
+    $khaki-300 : #ece06f;
+    $khaki-400 : #e7d746;
+    $khaki-500 : #e2ce1d;
+    $khaki-600 : #b9a818;
+    $khaki-700 : #908313;
+    $khaki-800 : #675e0d;
+    $khaki-900 : #3d3808;
+    $khaki-950 : #141303;
+
+    $thistle-50  : #f6f1f6;
+    $thistle-100 : #e5d4e5;
+    $thistle-200 : #d3b7d3;
+    $thistle-300 : #c29ac2;
+    $thistle-400 : #b07db0;
+    $thistle-500 : #9e619e;
+    $thistle-600 : #824f82;
+    $thistle-700 : #653d65;
+    $thistle-800 : #482c48;
+    $thistle-900 : #2b1a2b;
+    $thistle-950 : #0e090e;
+
+    $violet-50  : #fcebfc;
+    $violet-100 : #f7c2f7;
+    $violet-200 : #f199f1;
+    $violet-300 : #ec70ec;
+    $violet-400 : #e647e6;
+    $violet-500 : #e01fe0;
+    $violet-600 : #b819b8;
+    $violet-700 : #8f138f;
+    $violet-800 : #660e66;
+    $violet-900 : #3d083d;
+    $violet-950 : #140314;
+
+    $indigo-50  : #f5e8ff;
+    $indigo-100 : #e2b9ff;
+    $indigo-200 : #ce8bff;
+    $indigo-300 : #ba5dff;
+    $indigo-400 : #a72eff;
+    $indigo-500 : #9300ff;
+    $indigo-600 : #7800d1;
+    $indigo-700 : #5e00a2;
+    $indigo-800 : #430074;
+    $indigo-900 : #280046;
+    $indigo-950 : #0d0017;
+
+    $sea-green-50  : #eef9f3;
+    $sea-green-100 : #cbeeda;
+    $sea-green-200 : #a8e2c2;
+    $sea-green-300 : #85d7a9;
+    $sea-green-400 : #62cb90;
+    $sea-green-500 : #3fc078;
+    $sea-green-600 : #349d62;
+    $sea-green-700 : #287a4c;
+    $sea-green-800 : #1d5736;
+    $sea-green-900 : #113421;
+    $sea-green-950 : #06110b;
+
+    $green-50  : #e8ffe8;
+    $green-100 : #b9ffb9;
+    $green-200 : #8bff8b;
+    $green-300 : #5dff5d;
+    $green-400 : #2eff2e;
+    $green-500 : #00ff00;
+    $green-600 : #00d100;
+    $green-700 : #00a200;
+    $green-800 : #007400;
+    $green-900 : #004600;
+    $green-950 : #001700;
+
+    $aquamarine-50  : #e8fff7;
+    $aquamarine-100 : #b9ffe8;
+    $aquamarine-200 : #8bffd8;
+    $aquamarine-300 : #5dffc8;
+    $aquamarine-400 : #2effb9;
+    $aquamarine-500 : #00ffa9;
+    $aquamarine-600 : #00d18b;
+    $aquamarine-700 : #00a26c;
+    $aquamarine-800 : #00744d;
+    $aquamarine-900 : #00462e;
+    $aquamarine-950 : #00170f;
+
+    $teal-50  : #e8ffff;
+    $teal-100 : #b9ffff;
+    $teal-200 : #8bffff;
+    $teal-300 : #5dffff;
+    $teal-400 : #2effff;
+    $teal-500 : #00ffff;
+    $teal-600 : #00d1d1;
+    $teal-700 : #00a2a2;
+    $teal-800 : #007474;
+    $teal-900 : #004646;
+    $teal-950 : #00170f;
+
+    $dodger-blue-50  : #e8f4ff;
+    $dodger-blue-100 : #b9ddff;
+    $dodger-blue-200 : #8bc6ff;
+    $dodger-blue-300 : #5dafff;
+    $dodger-blue-400 : #2e98ff;
+    $dodger-blue-500 : #0081ff;
+    $dodger-blue-600 : #006ad1;
+    $dodger-blue-700 : #0052a2;
+    $dodger-blue-800 : #003b74;
+    $dodger-blue-900 : #002346;
+    $dodger-blue-950 : #000c17;
+
+    $blue-50  : #e8e8ff;
+    $blue-100 : #b9b9ff;
+    $blue-200 : #8b8bff;
+    $blue-300 : #5d5dff;
+    $blue-400 : #2e2eff;
+    $blue-500 : #0000ff;
+    $blue-600 : #0000d1;
+    $blue-700 : #0000a2;
+    $blue-800 : #000074;
+    $blue-900 : #000046;
+    $blue-950 : #000017;
+
+    $gray-50  : #fefefe;
+    $gray-100 : #f5f5f5;
+    $gray-200 : #e8e8e8;
+    $gray-300 : #d4d4d4;
+    $gray-400 : #bcbcbc;
+    $gray-500 : #aaaaaa;
+    $gray-600 : #989898;
+    $gray-700 : #777777;
+    $gray-800 : #555555;
+    $gray-900 : #333333;
+    $gray-950 : #0a0a0a;
+    

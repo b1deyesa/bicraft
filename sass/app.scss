@@ -1,0 +1,36 @@
+
+@import 'base/reset';
+@import 'base/variables';
+
+@import 'themes/default';
+
+@import 'components/typography';
+@import 'components/button';
+@import 'components/input';
+@import 'components/modal';
+@import 'components/alert';
+@import 'components/table';
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 10em;
+    font-family : $font-family-sans-serif;
+    font-size   : $font-size-8;
+    background  : $light-light;
+    color       : $dark-light;
+}
+
+body > form {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.buttons {
+    display: flex;
+    gap: 1em;
+}
+

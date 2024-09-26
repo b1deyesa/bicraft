@@ -1,0 +1,97 @@
+@import 'light';
+@import 'dark';
+
+/*
+| ------------------------------------------
+|   Primary
+| ------------------------------------------
+*/       
+    $primary-light  : var(--primary-light);
+    $primary-normal : var(--primary-normal);
+    $primary-dark   : var(--primary-dark);
+/*
+| ------------------------------------------
+|   Secondary
+| ------------------------------------------
+*/               
+    $secondary-light  : var(--secondary-light);
+    $secondary-normal : var(--secondary-normal);
+    $secondary-dark   : var(--secondary-dark);
+/*
+| ------------------------------------------
+|   Tertiary
+| ------------------------------------------
+*/               
+    $tertiary-light  : var(--tertiary-light);
+    $tertiary-normal : var(--tertiary-normal);
+    $tertiary-dark   : var(--tertiary-dark);
+/*
+| ------------------------------------------
+|   Dark
+| ------------------------------------------
+*/               
+    $dark-light  : var(--dark-light);
+    $dark-normal : var(--dark-normal);
+    $dark-dark   : var(--dark-dark);
+/*
+| ------------------------------------------
+|   Light
+| ------------------------------------------
+*/               
+    $light-light  : var(--light-light);
+    $light-normal : var(--light-normal);
+    $light-dark   : var(--light-dark);
+/*
+| ------------------------------------------
+|   Error
+| ------------------------------------------
+*/               
+    $error-light  : var(--error-light);
+    $error-normal : var(--error-normal);
+    $error-dark   : var(--error-dark);
+/*
+| ------------------------------------------
+|   Warning
+| ------------------------------------------
+*/                  
+    $warning-light  : var(--warning-light);
+    $warning-normal : var(--warning-normal);
+    $warning-dark   : var(--warning-dark);
+/*
+| ------------------------------------------
+|   Success
+| ------------------------------------------
+*/          
+    $success-light  : var(--success-light);
+    $success-normal : var(--success-normal);
+    $success-dark   : var(--success-dark);
+/*
+| ------------------------------------------
+|   Transparancy Light
+| ------------------------------------------
+*/                  
+    $transparancy-light-5  : var(--transparancy-light-5);
+    $transparancy-light-10 : var(--transparancy-light-10);
+    $transparancy-light-20 : var(--transparancy-light-20);
+    $transparancy-light-30 : var(--transparancy-light-30);
+    $transparancy-light-40 : var(--transparancy-light-40);
+    $transparancy-light-50 : var(--transparancy-light-50);
+    $transparancy-light-60 : var(--transparancy-light-60);
+    $transparancy-light-70 : var(--transparancy-light-70);
+    $transparancy-light-80 : var(--transparancy-light-80);
+    $transparancy-light-90 : var(--transparancy-light-90);
+/*
+| ------------------------------------------
+|   Transparancy Dark
+| ------------------------------------------
+*/          
+    $transparancy-dark-5  : var(--transparancy-dark-5);
+    $transparancy-dark-10 : var(--transparancy-dark-10);
+    $transparancy-dark-20 : var(--transparancy-dark-20);
+    $transparancy-dark-30 : var(--transparancy-dark-30);
+    $transparancy-dark-40 : var(--transparancy-dark-40);
+    $transparancy-dark-50 : var(--transparancy-dark-50);
+    $transparancy-dark-60 : var(--transparancy-dark-60);
+    $transparancy-dark-70 : var(--transparancy-dark-70);
+    $transparancy-dark-80 : var(--transparancy-dark-80);
+    $transparancy-dark-90 : var(--transparancy-dark-90);

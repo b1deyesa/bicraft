@@ -1,0 +1,97 @@
+body.dark {
+    /*
+    | ------------------------------------------
+    |   Primary
+    | ------------------------------------------
+    */
+        --primary-light  : #{$deep-pink-600};
+        --primary-normal : #{$deep-pink-300};
+        --primary-dark   : #{$deep-pink-100};
+    /*
+    | ------------------------------------------
+    |   Secondary
+    | ------------------------------------------
+    */
+        --secondary-light  : #{$blue-200};
+        --secondary-normal : #{$blue-100};
+        --secondary-dark   : #{$blue-50};
+        
+    /*
+    | ------------------------------------------
+    |   Tertiary
+    | ------------------------------------------
+    */
+        --tertiary-light  : #{$aquamarine-800};
+        --tertiary-normal : #{$aquamarine-600};
+        --tertiary-dark   : #{$aquamarine-200};
+    /*
+    | ------------------------------------------
+    |   Dark
+    | ------------------------------------------
+    */
+        --dark-light  : #{$gray-300};
+        --dark-normal : #{$gray-100};
+        --dark-dark   : #{$gray-50};
+    /*
+    | ------------------------------------------
+    |   Light
+    | ------------------------------------------
+    */
+        --light-light  : #{$gray-950};
+        --light-normal : #{$gray-900};
+        --light-dark   : #{$gray-800};
+    /*
+    | ------------------------------------------
+    |   Error
+    | ------------------------------------------
+    */
+        --error-light  : #{$red-600};
+        --error-normal : #{$red-300};
+        --error-dark   : #{$red-100};
+    /*
+    | ------------------------------------------
+    |   Warning
+    | ------------------------------------------
+    */
+        --warning-light  : #{$gold-700};
+        --warning-normal : #{$gold-300};
+        --warning-dark   : #{$gold-100};
+    /*
+    | ------------------------------------------
+    |   Success
+    | ------------------------------------------
+    */
+        --success-light  : #{$sea-green-600};
+        --success-normal : #{$sea-green-300};
+        --success-dark   : #{$sea-green-100};
+    /*
+    | ------------------------------------------
+    |   Transparancy Light
+    | ------------------------------------------
+    */        
+        --transparancy-light-5  : #0000000D;
+        --transparancy-light-10 : #0000001A;
+        --transparancy-light-20 : #00000033;
+        --transparancy-light-30 : #0000004D;
+        --transparancy-light-40 : #00000066;
+        --transparancy-light-50 : #00000080;
+        --transparancy-light-60 : #00000099;
+        --transparancy-light-70 : #000000B3;
+        --transparancy-light-80 : #000000CC;
+        --transparancy-light-90 : #000000E6;
+    /*
+    | ------------------------------------------
+    |   Transparancy Dark
+    | ------------------------------------------
+    */          
+        --transparancy-dark-5  : #ffffff0D;
+        --transparancy-dark-10 : #ffffff1A;
+        --transparancy-dark-20 : #ffffff33;
+        --transparancy-dark-30 : #ffffff4D;
+        --transparancy-dark-40 : #ffffff66;
+        --transparancy-dark-50 : #ffffff80;
+        --transparancy-dark-60 : #ffffff99;
+        --transparancy-dark-70 : #ffffffB3;
+        --transparancy-dark-80 : #ffffffCC;
+        --transparancy-dark-90 : #ffffffE6;
+}

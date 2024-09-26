@@ -1,0 +1,30 @@
+.alert {
+    display         : flex;
+    align-items     : center;
+    justify-content : space-between;
+    padding         : $spacing-4;
+    border-radius   : $radius-normal;
+    border-width    : $stroke-normal;
+    border-style    : solid;
+    border-color    : $transparancy-dark-10;
+    color           : $transparancy-dark-70;
+    .alert-info {
+        display     : flex;
+        align-items : center;
+        gap         : $spacing-3;
+    }
+    /*
+    | ------------------------------------------
+    |   Type
+    | ------------------------------------------
+    */
+        &.success {
+            background : $success-light;
+        }
+        &.warning {
+            background : $warning-light;
+        }
+        &.error {
+            background : $error-light;
+        }
+}

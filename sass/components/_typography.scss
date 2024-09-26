@@ -1,0 +1,376 @@
+/*
+| ------------------------------------------
+|   Heading
+| ------------------------------------------
+*/
+    h1 {
+        font-family : inherit;
+        font-size   : $font-size-2;
+        font-weight : $font-weight-bold;
+        line-height : $line-height-tight;
+        color       : $dark-normal;
+    }
+    h2 {
+        font-family : inherit;
+        font-size   : $font-size-3;
+        font-weight : $font-weight-bold;
+        line-height : $line-height-tight;
+        color       : $dark-normal;
+    }
+    h3 {
+        font-family : inherit;
+        font-size   : $font-size-4;
+        font-weight : $font-weight-bold;
+        line-height : $line-height-normal;
+        color       : $dark-normal;
+    }
+    h4 {
+        font-family : inherit;
+        font-size   : $font-size-5;
+        font-weight : $font-weight-bold;
+        line-height : $line-height-normal;
+        color       : $dark-normal;
+    }
+    h5 {
+        font-family : inherit;
+        font-size   : $font-size-6;
+        font-weight : $font-weight-bold;
+        line-height : $line-height-normal;
+        color       : $dark-normal;
+    }
+    h6 {
+        font-family : inherit;
+        font-size   : $font-size-7;
+        font-weight : $font-weight-bold;
+        line-height : $line-height-normal;
+        color       : $dark-normal;
+    }
+/*
+| ------------------------------------------
+|   Paragraph
+| ------------------------------------------
+*/
+    p {
+        font-family : inherit;
+        font-size   : inherit;
+        font-weight : $font-weight-regular;
+        line-height : $line-height-loose;
+        color       : inherit;
+    }
+/*
+| ------------------------------------------
+|   Label
+| ------------------------------------------
+*/
+    label {
+        font-family : inherit;
+        font-size   : inherit;
+        font-weight : $font-weight-regular;
+        line-height : $line-height-normal;
+        color       : inherit;
+    }
+/*
+| ------------------------------------------
+|   Span
+| ------------------------------------------
+*/
+    span {
+        font-family : inherit;
+        font-size   : inherit;
+        font-weight : $font-weight-regular;
+        line-height : $line-height-normal;
+        color       : inherit;
+    }
+/*
+| ------------------------------------------
+|   Input
+| ------------------------------------------
+*/
+    input {
+        font-family : inherit;
+        font-size   : inherit;
+        font-weight : $font-weight-regular;
+        line-height : $line-height-normal;
+        color       : inherit;
+    }
+/*
+| ------------------------------------------
+|   Textarea
+| ------------------------------------------
+*/
+    textarea {
+        font-family : inherit;
+        font-size   : inherit;
+        font-weight : $font-weight-regular;
+        line-height : $line-height-loose;
+        color       : inherit;
+    }
+/*
+| ------------------------------------------
+|   Button
+| ------------------------------------------
+*/
+    button {
+        font-family : inherit;
+        font-size   : inherit;
+        font-weight : $font-weight-regular;
+        line-height : $line-height-normal;
+        color       : inherit;
+    }
+/*
+| ------------------------------------------
+|   Bold
+| ------------------------------------------
+*/
+    b {
+        font-family : inherit;
+        font-size   : inherit;
+        font-weight : $font-weight-semi-bold;
+        line-height : inherit;
+        color       : $dark-dark;
+    }
+/*
+| ------------------------------------------
+|   Black
+| ------------------------------------------
+*/
+    strong {
+        font-family : inherit;
+        font-size   : inherit;
+        font-weight : $font-weight-bold;
+        line-height : inherit;
+        color       : $dark-dark;
+    }
+/*
+| ------------------------------------------
+|   Italic
+| ------------------------------------------
+*/
+    i {
+        font-family : inherit;
+        font-size   : inherit;
+        font-style  : italic;
+        font-weight : inherit;
+        line-height : inherit;
+        color       : inherit;
+    }
+/*
+| ------------------------------------------
+|   Emphasis
+| ------------------------------------------
+*/
+    em {
+        font-family : inherit;
+        font-size   : inherit;
+        font-style  : italic;
+        font-weight : inherit;
+        line-height : inherit;
+        color       : $dark-dark;
+    }
+/*
+| ------------------------------------------
+|   Anchor
+| ------------------------------------------
+*/
+
+    a {
+        font-family     : inherit;
+        font-size       : inherit;
+        font-weight     : inherit;
+        line-height     : inherit;
+        text-decoration : underline;
+        color           : $dark-dark;
+        &:hover {
+            color: $dark-light;
+        }
+    }
+/*
+| ------------------------------------------
+|   Underline
+| ------------------------------------------
+*/
+    u {
+        font-family     : inherit;
+        font-size       : inherit;
+        font-weight     : inherit;
+        line-height     : inherit;
+        text-decoration : underline;
+        color           : inherit;
+    }
+/*
+| ------------------------------------------
+|   Inserted
+| ------------------------------------------
+*/
+    ins {
+        font-family     : inherit;
+        font-size       : inherit;
+        font-weight     : inherit;
+        line-height     : inherit;
+        text-decoration : underline;
+        color           : $dark-dark;
+    }
+/*
+| ------------------------------------------
+|   Abbreviation
+| ------------------------------------------
+*/
+    abbr {
+        font-family     : inherit;
+        font-size       : inherit;
+        font-weight     : inherit;
+        line-height     : inherit;
+        text-decoration : underline dotted;
+        color           : inherit;
+    }
+/*
+| ------------------------------------------
+|   Deleted
+| ------------------------------------------
+*/
+    del {
+        font-family     : inherit;
+        font-size       : inherit;
+        font-weight     : inherit;
+        line-height     : inherit;
+        text-decoration : line-through;
+        color           : inherit;
+    }
+/*
+| ------------------------------------------
+|   Small
+| ------------------------------------------
+*/
+    small {
+        font-family : inherit;
+        font-size   : $font-size-9;
+        font-weight : $font-weight-regular;
+        line-height : $line-height-loose;
+        color       : inherit;
+    }
+/*
+| ------------------------------------------
+|   Subscript
+| ------------------------------------------
+*/
+    sub {
+        font-family    : inherit;
+        font-size      : $font-size-10;
+        font-weight    : inherit;
+        line-height    : inherit;
+        vertical-align : sub;
+        color          : inherit;
+    }
+/*
+| ------------------------------------------
+|   Superscript
+| ------------------------------------------
+*/
+    sup {
+        font-family    : inherit;
+        font-size      : $font-size-10;
+        font-weight    : inherit;
+        line-height    : inherit;
+        vertical-align : sup;
+        color          : inherit;
+    }
+/*
+| ------------------------------------------
+|   Mark
+| ------------------------------------------
+*/
+    mark {
+        font-family   : inherit;
+        font-size     : inherit;
+        font-weight   : inherit;
+        line-height   : inherit;
+        width         : fit-content;
+        margin        : 0 $spacing-1;
+        padding       : $spacing-1 $spacing-2;
+        border-radius : $radius-small;
+        background    : $transparancy-dark-10;
+        color         : inherit;
+    }
+/*
+| ------------------------------------------
+|   Code
+| ------------------------------------------
+*/
+    code {
+        font-family   : $font-family-monospace;
+        font-size     : .9em;
+        font-weight   : $font-weight-regular;
+        line-height   : inherit;
+        width         : fit-content;
+        margin        : 0 $spacing-2;
+        padding       : $spacing-1 $spacing-2;
+        border-radius : $radius-normal;
+        background    : $transparancy-dark-10;
+        color         : $dark-normal;
+    }
+/*
+| ------------------------------------------
+|  Preformatted
+| ------------------------------------------
+*/
+    pre {
+        font-family   : $font-family-monospace;
+        font-size     : .9em;
+        font-weight   : $font-weight-regular;
+        line-height   : inherit;
+        white-space   : pre;
+        overflow      : auto;
+        width         : fit-content;
+        margin        : 0 $spacing-2;
+        padding       : $spacing-1 $spacing-2;
+        border-radius : $radius-normal;
+        background    : $transparancy-dark-10;
+        color         : $dark-normal;
+    }
+/*
+| ------------------------------------------
+|   Quotes
+| ------------------------------------------
+*/
+    @import url('https://fonts.googleapis.com/css2?family=Coustard&display=swap');
+    
+    q {
+        quotes      : "“" "”" "‘" "’";
+        font-family : inherit;
+        font-size   : inherit;
+        font-weight : inherit;
+        line-height : inherit;
+        color       : inherit;
+        &::before {
+            content     : open-quote;
+            font-family : "Coustard", serif;
+        }
+        &::after {
+            content     : close-quote;
+            font-family : "Coustard", serif;
+        }
+    }
+/*
+| ------------------------------------------
+|   Block Quote
+| ------------------------------------------
+*/
+    blockquote {
+        position    : relative;
+        font-family : inherit;
+        font-size   : inherit;
+        font-style  : italic;
+        font-weight : $font-weight-regular;
+        line-height : $line-height-loose;
+        margin      : $spacing-3 $spacing-9;
+        padding     : $spacing-6;
+        color       : $dark-normal;
+        &::before {
+            content     : '"';
+            position    : absolute;
+            font-family : "Coustard", serif;
+            font-size   : 4em;
+            top         : 0;
+            left        : -$spacing-6;
+        }
+    }
