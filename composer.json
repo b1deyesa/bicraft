@@ -11,30 +11,28 @@
         }
     ],
     "require": {
-        "livewire/livewire": "^3.5",
-        "bideyesa/bicraft": "1.0.0"
+        "livewire/livewire": "^3.5"
     },
     "autoload": {
         "psr-4": {
-            "Bideyesa\\Bicraft\\": "."
+            "Bideyesa\\Bicraft\\": "src/"
         }
     },
     "scripts": {
         "post-install-cmd": [
-            "php artisan vendor:publish --tag=bicraft"
+            "@php artisan vendor:publish --tag=bicraft --ansi"
         ],
         "post-update-cmd": [
-            "php artisan vendor:publish --tag=bicraft"
+            "@php artisan vendor:publish --tag=bicraft --ansi"
         ]
     },
     "extra": {
         "laravel": {
             "providers": [
                 "Bideyesa\\Bicraft\\BicraftServiceProvider"
-            ],
-            "aliases": []
+            ]
         }
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "prefer-stable": true
 }
