@@ -10,6 +10,7 @@ class BicraftServiceProvider extends ServiceProvider
     {
         $this->publishes([
             __DIR__.'/views' => resource_path('views'),
+            __DIR__.'/views' => resource_path('views'),
         ], 'bicraft');
     }
 

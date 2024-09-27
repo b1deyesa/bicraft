@@ -10,6 +10,10 @@
             "email": "bideyesa@gmail.com"
         }
     ],
+    "require": {
+        "livewire/livewire": "^3.5",
+        "bideyesa/bicraft": "1.0.0"
+    },
     "autoload": {
         "psr-4": {
             "Bideyesa\\Bicraft\\": "."
@@ -31,6 +35,6 @@
             "aliases": []
         }
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true
 }
