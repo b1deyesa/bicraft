@@ -9,10 +9,9 @@ class BicraftServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/views' => resource_path('views'),
-            __DIR__.'/js' => resource_path('js'),
-            __DIR__.'/sass' => resource_path('sass'),
-            __DIR__.'/app' => resource_path('app'),
+            __DIR__.'/public' => public_path(),
+            __DIR__.'/resources' => resource_path(),
+            __DIR__.'/app' => app_path(),
         ], 'bicraft');
 
         $viteConfigPath = base_path('vite.config.js');
