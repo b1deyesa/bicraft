@@ -52,7 +52,8 @@ class File extends Component
         
         $this->file->storeAs('public', $this->data['dir']);
         $this->filename = $this->data['name'];
-        $this->rename = true;
+        $this->value = json_encode($this->data);
+        $this->success = true;
     }
     
     public function onRename()

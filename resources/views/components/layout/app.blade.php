@@ -10,13 +10,20 @@
     <script src="{{ asset('vendor/fontawsome.js') }}"></script>
     <script src="{{ asset('vendor/jquery.js') }}"></script>
     <script src="{{ asset('vendor/dataTables.js') }}"></script>
-    
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+
+    @vite(['resources/sass/app.scss'])
     @livewireStyles
     @stack('styles')
 </head>
-<body {{ $attributes }}>
+<body {{ $attributes->merge(['class' => 'light']) }}>
+    
+    {{-- Slot --}}
     {{ $slot }}
+    
+    {{-- Footer --}}
+    @if ($footer)
+        <footer>Copyright © 2024 bideyesa. All Rights Reserved.</footer>
+    @endif
     
     @livewireScripts
     @stack('scripts')

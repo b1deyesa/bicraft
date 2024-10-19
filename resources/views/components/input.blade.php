@@ -13,8 +13,8 @@
                     id="{{ $id }}" 
                     name="{{ $name }}"
                     autocomplete="off"
-                    @if($live) wire:modal.live="{{ $live }}" @endif
-                    @if($wire) wire:modal="{{ $wire }}" @endif
+                    @if($live) wire:model.live="{{ $live }}" @endif
+                    @if($wire) wire:model="{{ $wire }}" @endif
                     @if(old($name, $value)) value="{{ old($name, $value) }}" @endif
                     @if($placeholder) placeholder="{{ $placeholder }}" @endif
                     {{ $attributes }}
@@ -22,13 +22,26 @@
                 @if($surfix) <span class="surfix">{{ $surfix }}</span> @endif
             </span>
             @break
+        @case('password')
+            <span class="input-text{{ $errors->has($name) ? ' input-error' : '' }}{{ $class }}">
+                <input 
+                    type="password"
+                    id="{{ $id }}" 
+                    name="{{ $name }}"
+                    @if($live) wire:model.live="{{ $live }}" @endif
+                    @if($wire) wire:model="{{ $wire }}" @endif
+                    @if($placeholder) placeholder="{{ $placeholder }}" @endif
+                    {{ $attributes }}
+                    >
+            </span>
+            @break
         @case('textarea')
             <textarea
                 class="input-textarea{{ $errors->has($name) ? ' input-error' : '' }}{{ $class }}"
                 id="{{ $id }}" 
                 name="{{ $name }}"
-                @if($live) wire:modal.live="{{ $live }}" @endif
-                @if($wire) wire:modal="{{ $wire }}" @endif
+                @if($live) wire:model.live="{{ $live }}" @endif
+                @if($wire) wire:model="{{ $wire }}" @endif
                 @if($placeholder) placeholder="{{ $placeholder }}" @endif
                 {{ $attributes }}
                 >{{ old($name, $value) }}</textarea>
@@ -50,8 +63,8 @@
                     id="select-key-{{ $id }}"
                     name="{{ $name }}"
                     value="{{ old($name, $value) }}"
-                    @if($live) wire:modal.live="{{ $live }}" @endif
-                    @if($wire) wire:modal="{{ $wire }}" @endif
+                    @if($live) wire:model.live="{{ $live }}" @endif
+                    @if($wire) wire:model="{{ $wire }}" @endif
                     >
                 <div class="options" id="options-{{ $id }}">
                     <ul>
@@ -237,8 +250,8 @@
                     id="{{ $id }}" 
                     name="{{ $name }}"
                     autocomplete="off"
-                    @if($live) wire:modal.live="{{ $live }}" @endif
-                    @if($wire) wire:modal="{{ $wire }}" @endif
+                    @if($live) wire:model.live="{{ $live }}" @endif
+                    @if($wire) wire:model="{{ $wire }}" @endif
                     @if(old($name, $value)) value="{{ old($name, $value) }}" @endif
                     @if($placeholder) placeholder="{{ $placeholder }}" @endif
                     {{ $attributes }}
@@ -274,8 +287,8 @@
                             id="{{ $id }}-{{ $key }}" 
                             name="{{ $name }}"
                             value="{{ $key }}"
-                            @if($live) wire:modal.live="{{ $live }}" @endif
-                            @if($wire) wire:modal="{{ $wire }}" @endif
+                            @if($live) wire:model.live="{{ $live }}" @endif
+                            @if($wire) wire:model="{{ $wire }}" @endif
                             @checked(old($name, $value) == $key)
                             {{ $attributes }}
                             >
@@ -296,8 +309,8 @@
                             id="{{ $id }}-{{ $key }}" 
                             name="{{ $name }}[{{ $key }}]"
                             value="{{ $key }}"
-                            @if($live) wire:modal.live="{{ $live }}.{{ $key }}" @endif
-                            @if($wire) wire:modal="{{ $wire }}.{{ $key }}" @endif
+                            @if($live) wire:model.live="{{ $live }}.{{ $key }}" @endif
+                            @if($wire) wire:model="{{ $wire }}.{{ $key }}" @endif
                             @checked(in_array($key, old($name, $value ?? [])))
                             {{ $attributes }}
                             >
@@ -307,10 +320,10 @@
             </span>
             @break
         @case('file')
-            @livewire('components.file', ['id' => $id, 'name' => $name, 'wire' => $wire, 'value' => $value, 'class' => $class, 'disabled' => $attributes['disabled'] ?? false])
+            @livewire('components.file', ['id' => $id, 'name' => $name, 'value' => $value, 'wire' => $wire, 'class' => $class, 'disabled' => $attributes['disabled'] ?? false])
             @break
     @endswitch
-
+    
     {{-- Detail --}}
     <div class="detail">
         <div class="info">
@@ -319,4 +332,5 @@
         </div>
         @if($max)<small class="max">0 / {{ $max }}</small>@endif
     </div>
+    
 </div>

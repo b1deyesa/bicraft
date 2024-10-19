@@ -1,6 +1,6 @@
-<span class="input-file{{ $errors->has($name) ? ' input-error' : '' }}{{ $disabled ? ' disabled' : null }}{{ $class }}" wire:key="{{ $id }}}">
+<div class="input-file{{ $errors->has($name) ? ' input-error' : '' }}{{ $disabled ? ' disabled' : null }}{{ $class }}">
     @if ($rename)
-        <form wire:submit.prevent="submit" x-on:click.outside="$wire.call('submit')" @keydown.enter="$refs.submit.click()">
+        <form wire:submit.prevent="submit" x-on:click.outside="$wire.call('submit')" @keydown.enter="$refs.submit.click()" class="file-form">
             <input type="text" wire:model="filename" autocomplete="off" x-data x-init="$refs.input.focus()" x-ref="input">
             <div class="confirm">
                 <button type="button" wire:click="cancel()"><i class="fas fa-xmark"></i></button>
@@ -23,8 +23,7 @@
     @endif
     
     <input type="file" id="file-{{ $id }}" x-ref="file" wire:model="file">
-    <input type="hidden" id="{{ $id }}" name="{{ $name }}" 
-        @if($wire) wire:modal="{{ $wire }}" @endif
+    <input type="hidden" id="{{ $id }}" name="{{ $name }}"
         @if(old($name, $value)) value="{{ old($name, $value) }}" @endif
         >
-</span>
+</div>

@@ -8,28 +8,16 @@ use Illuminate\View\Component;
 
 class Table extends Component
 {
-    public $lengthChange;
-    
     /**
      * Create a new component instance.
      */
     public function __construct(
-        public $head    = null,
-        public $body    = null,
-        public $id      = null,
-        public $perPage = 10,
+        public $head = null,
+        public $body = null
     )
     {
-        $this->head    = $head;
-        $this->body    = $body;
-        $this->id      = $id;
-        $this->perPage = $perPage;
-        
-        if ($this->perPage !== 10) {
-            $this->lengthChange = false;
-        } else {
-            $this->lengthChange = true;
-        }
+        $this->head = $head;
+        $this->body = $body;
     }
 
     /**

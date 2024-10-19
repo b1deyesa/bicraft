@@ -12,10 +12,12 @@ class App extends Component
      * Create a new component instance.
      */
     public function __construct(
-        public $title = null
+        public $title  = null,
+        public $footer = true
     )
     {
-        $this->title = $title ? env('APP_NAME') .' - '. $title : env('APP_NAME');
+        $this->title  = $title;
+        $this->footer = $footer;
     }
 
     /**

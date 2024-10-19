@@ -44,7 +44,7 @@ class Input extends Component
             $this->name = $name ? $name : $this->type;
         }
         
-        $this->id          = $id ? $id : $this->name;
+        $this->id          = $id ? $this->name .'-'. $id : $this->name;
         $this->live        = $live;
         $this->wire        = $wire;
         $this->prefix      = $prefix;
