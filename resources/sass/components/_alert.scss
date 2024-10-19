@@ -2,7 +2,7 @@
     display         : flex;
     align-items     : center;
     justify-content : space-between;
-    padding         : $spacing-4;
+    padding         : $spacing-4 $spacing-5;
     border-radius   : $radius-normal;
     border-width    : $stroke-normal;
     border-style    : solid;
@@ -12,6 +12,9 @@
         display     : flex;
         align-items : center;
         gap         : $spacing-3;
+    }
+    > i {
+        cursor : pointer;
     }
     /*
     | ------------------------------------------
