@@ -11,8 +11,7 @@
         }
     ],
     "require": {
-        "livewire/livewire": "*",
-        "sass": "^2.0"
+        "livewire/livewire": "*"
     },
     "autoload": {
         "psr-4": {
