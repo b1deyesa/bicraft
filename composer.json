@@ -11,20 +11,12 @@
         }
     ],
     "require": {
-        "livewire/livewire": "^3.5"
+        "livewire/livewire": "*"
     },
     "autoload": {
         "psr-4": {
             "Bideyesa\\Bicraft\\": "."
         }
-    },
-    "scripts": {
-        "post-install-cmd": [
-            "@php artisan vendor:publish --tag=bicraft --ansi"
-        ],
-        "post-update-cmd": [
-            "@php artisan vendor:publish --tag=bicraft --ansi"
-        ]
     },
     "extra": {
         "laravel": {
