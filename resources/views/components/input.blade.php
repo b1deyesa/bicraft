@@ -325,12 +325,14 @@
     @endswitch
     
     {{-- Detail --}}
-    <div class="detail">
-        <div class="info">
-            @if($message)<small class="message">{{ $message }}</small>@endif
-            <x-error name="{{ $name }}" />
+    @if ($max || $message || session('errors') && session('errors')->has($name))
+        <div class="detail">
+            <div class="info">
+                @if($message)<small class="message">{{ $message }}</small>@endif
+                <x-error name="{{ $name }}" />
+            </div>
+            @if($max)<small class="max">0 / {{ $max }}</small>@endif
         </div>
-        @if($max)<small class="max">0 / {{ $max }}</small>@endif
-    </div>
+    @endif
     
 </div>
