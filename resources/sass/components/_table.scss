@@ -1,3 +1,6 @@
+@use "../base/variables";
+@use "../themes/default";
+
 .table {
     /*
     | ------------------------------------------
@@ -6,15 +9,15 @@
     */
         th {
             font-family         : inherit;
-            font-size           : $font-size-10;
-            font-weight         : $font-weight-regular;
+            font-size           : variables.$font-size-10;
+            font-weight         : variables.$font-weight-regular;
             text-align          : start;
             vertical-align      : middle;
-            padding             : $spacing-3;
-            border-bottom-width : $stroke-normal;
+            padding             : variables.$spacing-3;
+            border-bottom-width : variables.$stroke-normal;
             border-bottom-style : solid;
-            border-bottom-color : $transparancy-dark-30;
-            color               : $transparancy-dark-50;
+            border-bottom-color : default.$transparancy-dark-30;
+            color               : default.$transparancy-dark-50;
             cursor              : pointer;
         }
     /*
@@ -24,28 +27,28 @@
     */
         td {
             font-family         : inherit;
-            font-size           : $font-size-9;
-            font-weight         : $font-weight-regular;
+            font-size           : variables.$font-size-9;
+            font-weight         : variables.$font-weight-regular;
             text-align          : start;
-            padding             : $spacing-3;
-            border-bottom-width : $stroke-normal;
+            padding             : variables.$spacing-3;
+            border-bottom-width : variables.$stroke-normal;
             border-bottom-style : solid;
-            border-bottom-color : $transparancy-dark-10;
-            color               : $dark-normal;
+            border-bottom-color : default.$transparancy-dark-10;
+            color               : default.$dark-normal;
             vertical-align      : middle;
             
             &.empty {
                 text-align : center;
-                padding    : $spacing-8 $spacing-2;
+                padding    : variables.$spacing-8 variables.$spacing-2;
                 small {
-                    font-size : $font-size-10;
+                    font-size : variables.$font-size-10;
                 }
             }
                   
             .action {
                 display     : flex;
                 align-items : center;
-                gap         : $spacing-3;
+                gap         : variables.$spacing-3;
                 cursor      : pointer;
             }
         }
@@ -56,7 +59,7 @@
     */
         tr {
             &:has(td):hover {
-                background : linear-gradient(90deg, $transparancy-dark-5, $transparancy-dark-20, $transparancy-dark-5);
+                background : linear-gradient(90deg, default.$transparancy-dark-5, default.$transparancy-dark-20, default.$transparancy-dark-5);
             }
             &:has(td.empty) {
                 background : transparent;

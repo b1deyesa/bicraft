@@ -1,69 +1,71 @@
+@use "../base/variables";
+
 body.dark {
     /*
     | ------------------------------------------
     |   Primary
     | ------------------------------------------
     */
-        --primary-light  : #{$deep-pink-600};
-        --primary-normal : #{$deep-pink-300};
-        --primary-dark   : #{$deep-pink-100};
+        --primary-light  : #{variables.$deep-pink-600};
+        --primary-normal : #{variables.$deep-pink-300};
+        --primary-dark   : #{variables.$deep-pink-100};
     /*
     | ------------------------------------------
     |   Secondary
     | ------------------------------------------
     */
-        --secondary-light  : #{$blue-200};
-        --secondary-normal : #{$blue-100};
-        --secondary-dark   : #{$blue-50};
+        --secondary-light  : #{variables.$blue-200};
+        --secondary-normal : #{variables.$blue-100};
+        --secondary-dark   : #{variables.$blue-50};
         
     /*
     | ------------------------------------------
     |   Tertiary
     | ------------------------------------------
     */
-        --tertiary-light  : #{$aquamarine-800};
-        --tertiary-normal : #{$aquamarine-600};
-        --tertiary-dark   : #{$aquamarine-200};
+        --tertiary-light  : #{variables.$aquamarine-800};
+        --tertiary-normal : #{variables.$aquamarine-600};
+        --tertiary-dark   : #{variables.$aquamarine-200};
     /*
     | ------------------------------------------
     |   Dark
     | ------------------------------------------
     */
-        --dark-light  : #{$gray-300};
-        --dark-normal : #{$gray-100};
-        --dark-dark   : #{$gray-50};
+        --dark-light  : #{variables.$gray-300};
+        --dark-normal : #{variables.$gray-100};
+        --dark-dark   : #{variables.$gray-50};
     /*
     | ------------------------------------------
     |   Light
     | ------------------------------------------
     */
-        --light-light  : #{$gray-950};
-        --light-normal : #{$gray-900};
-        --light-dark   : #{$gray-800};
+        --light-light  : #{variables.$gray-950};
+        --light-normal : #{variables.$gray-900};
+        --light-dark   : #{variables.$gray-800};
     /*
     | ------------------------------------------
     |   Error
     | ------------------------------------------
     */
-        --error-light  : #{$red-600};
-        --error-normal : #{$red-300};
-        --error-dark   : #{$red-100};
+        --error-light  : #{variables.$red-600};
+        --error-normal : #{variables.$red-300};
+        --error-dark   : #{variables.$red-100};
     /*
     | ------------------------------------------
     |   Warning
     | ------------------------------------------
     */
-        --warning-light  : #{$gold-700};
-        --warning-normal : #{$gold-300};
-        --warning-dark   : #{$gold-100};
+        --warning-light  : #{variables.$gold-700};
+        --warning-normal : #{variables.$gold-300};
+        --warning-dark   : #{variables.$gold-100};
     /*
     | ------------------------------------------
     |   Success
     | ------------------------------------------
     */
-        --success-light  : #{$sea-green-600};
-        --success-normal : #{$sea-green-300};
-        --success-dark   : #{$sea-green-100};
+        --success-light  : #{variables.$sea-green-600};
+        --success-normal : #{variables.$sea-green-300};
+        --success-dark   : #{variables.$sea-green-100};
     /*
     | ------------------------------------------
     |   Transparancy Light

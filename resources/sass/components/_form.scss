@@ -1,5 +1,7 @@
+@use "../base/variables";
+
 .form {
     display        : flex;
     flex-direction : column;
-    gap            : $spacing-5;
+    gap            : variables.$spacing-5;
 }

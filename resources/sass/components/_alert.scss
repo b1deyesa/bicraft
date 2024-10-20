@@ -1,17 +1,20 @@
+@use "../base/variables";
+@use "../themes/default";
+
 .alert {
     display         : flex;
     align-items     : center;
     justify-content : space-between;
-    padding         : $spacing-4 $spacing-5;
-    border-radius   : $radius-normal;
-    border-width    : $stroke-normal;
+    padding         : variables.$spacing-4 variables.$spacing-5;
+    border-radius   : variables.$radius-normal;
+    border-width    : variables.$stroke-normal;
     border-style    : solid;
-    border-color    : $transparancy-dark-10;
-    color           : $transparancy-dark-70;
+    border-color    : default.$transparancy-dark-10;
+    color           : default.$transparancy-dark-70;
     .alert-info {
         display     : flex;
         align-items : center;
-        gap         : $spacing-3;
+        gap         : variables.$spacing-3;
     }
     > i {
         cursor : pointer;
@@ -22,12 +25,12 @@
     | ------------------------------------------
     */
         &.success {
-            background : $success-light;
+            background : default.$success-light;
         }
         &.warning {
-            background : $warning-light;
+            background : default.$warning-light;
         }
         &.error {
-            background : $error-light;
+            background : default.$error-light;
         }
 }

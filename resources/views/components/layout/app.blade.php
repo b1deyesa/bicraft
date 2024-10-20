@@ -11,7 +11,7 @@
     <script src="{{ asset('vendor/jquery.js') }}"></script>
     <script src="{{ asset('vendor/dataTables.js') }}"></script>
 
-    @vite(['resources/sass/app.scss'])
+    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
     @livewireStyles
     @stack('styles')
 </head>

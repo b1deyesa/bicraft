@@ -1,24 +1,24 @@
 
-@import 'base/reset';
-@import 'base/variables';
+@use 'base/reset';
+@use 'base/variables';
 
-@import 'themes/default';
+@use 'themes/default';
 
-@import 'components/typography';
-@import 'components/button';
-@import 'components/input';
-@import 'components/modal';
-@import 'components/alert';
-@import 'components/table';
-@import 'components/form';
+@use 'components/typography';
+@use 'components/button';
+@use 'components/input';
+@use 'components/modal';
+@use 'components/alert';
+@use 'components/table';
+@use 'components/form';
 
 
 body {
     display     : flex;
-    font-family : $font-family-sans-serif;
-    font-size   : $font-size-8;
-    background  : $light-light;
-    color       : $dark-light;
+    font-family : variables.$font-family-sans-serif;
+    font-size   : variables.$font-size-8;
+    background  : default.$light-light;
+    color       : default.$dark-light;
 }
 
 

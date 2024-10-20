@@ -1,3 +1,6 @@
+@use "../base/variables";
+@use "../themes/default";
+
 .modal {
     position        : fixed;
     display         : flex;
@@ -13,18 +16,18 @@
     .modal-container {
         display        : flex;
         flex-direction : column;
-        padding        : $spacing-4;
-        border-radius  : $radius-medium;
-        background     : $light-normal;
+        padding        : variables.$spacing-4;
+        border-radius  : variables.$radius-medium;
+        background     : default.$light-normal;
         box-sizing     : border-box;
         .modal-empty {
             display         : flex;
             align-items     : center;
             justify-content : center;
-            font-size       : $font-size-10;
+            font-size       : variables.$font-size-10;
             height          : 8em;
             width           : 19em;
-            color           : $transparancy-dark-30;
+            color           : default.$transparancy-dark-30;
         }
     }
 }
