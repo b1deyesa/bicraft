@@ -2,7 +2,7 @@
     action="{{ $action }}"
     method="{{ $method }}"
     @if($wire) wire:submit="{{ $wire }}" @endif
-    {{ $attributes }}
+    {{ $attributes->marge('class' => 'form') }}
     >
     @if($method_type) @method($method_type) @endif
     @if($method != 'GET') @csrf @endif
