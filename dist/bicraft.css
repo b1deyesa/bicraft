@@ -4562,6 +4562,22 @@ table {
 |   Generate
 | ------------------------------------------
 */
+.text-start {
+  text-align: start;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
 .justify-content-start {
   justify-content: flex-start;
 }
