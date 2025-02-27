@@ -1,0 +1,35 @@
+@use 'sass:map';
+
+// Abstracts
+@use "abstracts/variables";
+@use "abstracts/mixins";
+@use "abstracts/functions";
+
+// Base
+@use 'base/reset';
+@use 'base/color';
+@use 'base/typography';
+
+// Layout
+@use "layout/grid";
+@use "layout/spacing";
+
+// Components
+@use "components/button";
+@use "components/alert";
+@use "components/card";
+
+// Utilities
+@use "utilities/utilities";
+@use "utilities/helper";
+@use "utilities/shadow";
+@use "utilities/z-index";
+
+// Themes
+@use "themes/light";
+@use "themes/dark";
+
+
+body {
+    font-family: map.get(variables.$font-family, 'serif');
+}

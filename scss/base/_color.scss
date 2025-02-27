@@ -1,0 +1,22 @@
+@use '../abstracts/variables';
+@use '../abstracts/functions';
+
+@each $key, $value in functions.color-shade() {    
+    /*
+    | ------------------------------------------
+    |   Text Color
+    | ------------------------------------------
+    */
+        .text-#{$key} { 
+            color: $value !important; 
+        }
+    /*
+    | ------------------------------------------
+    |   Background Color
+    | ------------------------------------------
+    */
+        .bg-#{$key} { 
+            background-color: $value; 
+            color: functions.auto-text-color($value);
+        }
+}

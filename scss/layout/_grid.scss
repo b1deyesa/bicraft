@@ -1,0 +1,38 @@
+@use 'sass:map';
+@use 'sass:math';
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
+@use '../abstracts/functions';
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 map.get(variables.$spacing, '3');
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    & > * {
+        width: 100%;
+    }
+}
+
+
+@for $i from 1 through variables.$grid-columns {
+    .col-#{$i} {
+        width: functions.width-grid-column($i);
+    }
+}
+
+@each $key, $value in variables.$breakpoint {
+    @include mixins.breakpoint($key) {
+        @for $i from 1 through variables.$grid-columns {
+            .col-#{$key}-#{$i} {
+                width: functions.width-grid-column($i);
+            }
+        }
+    }
+}

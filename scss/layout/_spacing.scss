@@ -1,0 +1,47 @@
+@use '../abstracts/variables';
+
+@each $key, $value in variables.$spacing {
+    /*
+    | ------------------------------------------
+    |   Gap
+    | ------------------------------------------
+    */
+        .gap-#{$key} {
+            gap: $value;
+        }
+    /*
+    | ------------------------------------------
+    |   Padding & Margin
+    | ------------------------------------------
+    */
+        $directions: ('t' : top, 'r' : right, 'b' : bottom, 'l' : left, 'x' : null, 'y' : null);
+        @each $surfix, $direction in $directions {
+            @if ($surfix == 'x' or $surfix == 'y') {
+                .p#{$surfix}-#{$key} {
+                    @if ($surfix == 'x') {
+                        padding-right: $value;
+                        padding-left: $value;
+                    } @else {
+                        padding-top: $value;
+                        padding-bottom: $value;
+                    }
+                }
+                .m#{$surfix}-#{$key} {
+                    @if ($surfix == 'x') {
+                        margin-right: $value;
+                        margin-left: $value;
+                    } @else {
+                        margin-top: $value;
+                        margin-bottom: $value;
+                    }
+                }
+            } @else {
+                .p#{$surfix}-#{$key} {
+                    padding-#{$direction}: $value;
+                }
+                .m#{$surfix}-#{$key} {
+                    margin-#{$direction}: $value;
+                }
+            }
+        }
+}

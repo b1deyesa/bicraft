@@ -1,0 +1,53 @@
+@use 'sass:map';
+@use 'sass:math';
+@use 'sass:color';
+@use 'variables';
+
+/*
+| ------------------------------------------
+|   Is Dark?
+| ------------------------------------------
+*/
+    @function is-dark($color) {
+        $r: color.channel($color, "red", $space: rgb);
+        $g: color.channel($color, "green", $space: rgb);
+        $b: color.channel($color, "blue", $space: rgb);
+        $yiq: math.div($r * 299 + $g * 587 + $b * 114, 1000);
+        @return $yiq < 170;
+    }
+/*
+| ------------------------------------------
+|   Auto Text Color (Light or Dark)
+| ------------------------------------------
+*/
+    @function auto-text-color($background-color) {
+        @if is-dark($background-color) {
+            @return map.get(variables.$color, 'light');
+        } @else {
+            @return color.adjust($background-color, $lightness: -40%);
+        }
+    }
+/*
+| ------------------------------------------
+|   Color Shade
+| ------------------------------------------
+*/
+    @function color-shade() {
+        $colors: ();
+        @each $color, $code in variables.$color {
+            @each $key, $value in variables.$color-shade {
+                $color-mix: color.mix(if($key > 500, black, white), $code, $value * 17%);
+                $colors: map.merge($colors, ("#{$color}-#{$key}": $color-mix)); 
+            }
+        }
+        @return $colors;
+    }
+/*
+| ------------------------------------------
+|   Width Grid Column
+| ------------------------------------------
+*/
+    @function width-grid-column($size) {
+        @return math.div($size * 100%, variables.$grid-columns);
+    }
+    

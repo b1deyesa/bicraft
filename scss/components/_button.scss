@@ -1,0 +1,54 @@
+@use 'sass:map';
+@use '../abstracts/mixins';
+@use '../abstracts/variables';
+@use '../abstracts/functions';
+
+/*
+| ------------------------------------------
+|   Button Default
+| ------------------------------------------
+*/
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    width: fit-content;
+    padding: map.get(variables.$spacing, '2') map.get(variables.$spacing, '3');
+    border-radius: 0;
+    border: map.get(variables.$border-size, 'default') solid rgba(#000000, 0.2);
+}
+
+@each $key, $value in variables.$color {
+    /*
+    | ------------------------------------------
+    |   Button Fill
+    | ------------------------------------------
+    */
+        .btn-#{$key} {
+            @extend .btn;
+            border: map.get(variables.$border-size, 'default') solid rgba(#000000, 0.2);
+            background-color: $value;
+            color: functions.auto-text-color($value);
+        }
+    /*
+    | ------------------------------------------
+    |   Button Outline
+    | ------------------------------------------
+    */
+        .btn-outline-#{$key} {
+            @extend .btn;
+            border: map.get(variables.$border-size, 'default') solid $value;
+            background-color: transparent;
+            color: $value
+        }
+    /*
+    | ------------------------------------------
+    |   Button Link
+    | ------------------------------------------
+    */
+        .btn-link-#{$key} {
+            @extend .btn;
+            border: map.get(variables.$border-size, 'default') solid transparent;
+            background-color: transparent;
+            color: $value
+        }
+}

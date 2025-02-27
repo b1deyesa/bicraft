@@ -1,0 +1,118 @@
+@use 'sass:map';
+@use '../abstracts/variables';
+
+
+$utilities: (
+    /*
+    | ------------------------------------------
+    |   Justify Content
+    | ------------------------------------------
+    */
+        'justify-content': (
+            'prefix' : 'justify-content',
+            'values' : (
+                'start'         : flex-start,  
+                'end'           : flex-end,
+                'center'        : center,  
+                'space-between' : space-between
+            )
+        ),
+    /*
+    | ------------------------------------------
+    |   Align Items
+    | ------------------------------------------
+    */
+        'align-items': (
+            'prefix' : 'align-items',
+            'values' : (
+                'start'  : flex-start,  
+                'end'    : flex-end,
+                'center' : center
+            )
+        ),
+    /*
+    | ------------------------------------------
+    |   Display
+    | ------------------------------------------
+    */
+        'display': (
+            'prefix' : 'd',
+            'values' : (
+                'block'        : block,  
+                'inline'       : inline,  
+                'inline-block' : inline-block,  
+                'flex'         : flex,  
+                'grid'         : grid
+            )
+        ),
+    /*
+    | ------------------------------------------
+    |   Flex Direction
+    | ------------------------------------------
+    */
+        'flex-direction': (
+            'prefix' : 'flex',
+            'values' : (
+                'row'            : row,  
+                'column'         : column,  
+                'row-reverse'    : row-reverse,  
+                'column-reverse' : column-reverse
+            )
+        ),
+    /*
+    | ------------------------------------------
+    |   Width
+    | ------------------------------------------
+    */
+        'width': (
+            'prefix' : 'w',
+            'values' : (
+                'full' : 100%,
+                'fit' : fit-content
+            )
+        ),
+    /*
+    | ------------------------------------------
+    |   Height
+    | ------------------------------------------
+    */
+        'height': (
+            'prefix' : 'h',
+            'values' : (
+                'full' : 100vh,
+                'fit'  : fit-content
+            )
+        ),
+    /*
+    | ------------------------------------------
+    |   Z-Index
+    | ------------------------------------------
+    */
+        'z-index': (
+            'prefix' : 'z',
+            'values' : (
+                '10' : 10,
+                '20' : 20,
+                '30' : 30,
+                '40' : 40,
+                '50' : 50,
+            )
+        ),
+);
+
+
+/*
+| ------------------------------------------
+|   Generate
+| ------------------------------------------
+*/
+    @each $property, $map in $utilities {
+        $prefix : map.get($map, 'prefix');
+        $values : map.get($map, 'values');
+        
+        @each $key, $value in $values {
+            .#{$prefix}-#{$key} {
+                #{$property}: $value;
+            }
+        }
+    }

@@ -1,0 +1,48 @@
+@use 'sass:map';
+@use '../abstracts/variables';
+
+$typography: (
+    'heading': (
+        'style': (
+            'font-family' : map.get(variables.$font-family, 'sans-serif'),
+            'font-weight' : map.get(variables.$font-weight, 'bold')
+        ),
+        'map': (
+            '1': ('font-size' : map.get(variables.$font-size, '2xl')),
+            '2': ('font-size' : map.get(variables.$font-size, 'xl')),
+            '3': ('font-size' : map.get(variables.$font-size, 'lg')),
+            '4': ('font-size' : map.get(variables.$font-size, 'md')),
+            '5': ('font-size' : map.get(variables.$font-size, 'normal')),
+            '6': ('font-size' : map.get(variables.$font-size, 'sm') )
+        ) 
+    ),
+    'font': (
+        'style': (
+            'font-family' : map.get(variables.$font-family, 'serif'),
+            'line-height' : map.get(variables.$line-height, 'normal')
+        ),
+        'map': (
+            '1': ('font-size' : map.get(variables.$font-size, 'xl')),
+            '2': ('font-size' : map.get(variables.$font-size, 'lg')),
+            '3': ('font-size' : map.get(variables.$font-size, 'md')),
+            '4': ('font-size' : map.get(variables.$font-size, 'normal')),
+            '5': ('font-size' : map.get(variables.$font-size, 'sm') ),
+            '6': ('font-size' : map.get(variables.$font-size, 'xs') )
+        )
+    )
+);
+
+
+@each $prefix, $values in $typography {
+    @each $item-key, $item-property in map.get($values, 'map') {
+        .#{$prefix}-#{$item-key} {
+            @each $key, $value in map.get($values, 'style') {
+                #{$key}: $value;
+            }
+            @each $key, $value in $item-property {
+                #{$key}: $value;
+            }
+        }
+    }
+}
+
