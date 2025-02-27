@@ -4633,4 +4633,12 @@ table {
   width: fit-content;
 }
 
+.h-full {
+  height: 100vh;
+}
+
+.h-fit {
+  height: fit-content;
+}
+
 /*# sourceMappingURL=bicraft.css.map */
