@@ -1836,6 +1836,215 @@ table {
 |   Text Color
 | ------------------------------------------
 */
+.text-gray-50 {
+  color: rgb(242.25, 242.25, 242.25) !important;
+}
+
+/*
+| ------------------------------------------
+|   Background Color
+| ------------------------------------------
+*/
+.bg-gray-50 {
+  background-color: rgb(242.25, 242.25, 242.25);
+  color: rgb(140.25, 140.25, 140.25);
+}
+
+/*
+| ------------------------------------------
+|   Text Color
+| ------------------------------------------
+*/
+.text-gray-100 {
+  color: rgb(227.8, 227.8, 227.8) !important;
+}
+
+/*
+| ------------------------------------------
+|   Background Color
+| ------------------------------------------
+*/
+.bg-gray-100 {
+  background-color: rgb(227.8, 227.8, 227.8);
+  color: rgb(125.8, 125.8, 125.8);
+}
+
+/*
+| ------------------------------------------
+|   Text Color
+| ------------------------------------------
+*/
+.text-gray-200 {
+  color: rgb(213.35, 213.35, 213.35) !important;
+}
+
+/*
+| ------------------------------------------
+|   Background Color
+| ------------------------------------------
+*/
+.bg-gray-200 {
+  background-color: rgb(213.35, 213.35, 213.35);
+  color: rgb(111.35, 111.35, 111.35);
+}
+
+/*
+| ------------------------------------------
+|   Text Color
+| ------------------------------------------
+*/
+.text-gray-300 {
+  color: rgb(198.9, 198.9, 198.9) !important;
+}
+
+/*
+| ------------------------------------------
+|   Background Color
+| ------------------------------------------
+*/
+.bg-gray-300 {
+  background-color: rgb(198.9, 198.9, 198.9);
+  color: rgb(96.9, 96.9, 96.9);
+}
+
+/*
+| ------------------------------------------
+|   Text Color
+| ------------------------------------------
+*/
+.text-gray-400 {
+  color: rgb(184.45, 184.45, 184.45) !important;
+}
+
+/*
+| ------------------------------------------
+|   Background Color
+| ------------------------------------------
+*/
+.bg-gray-400 {
+  background-color: rgb(184.45, 184.45, 184.45);
+  color: rgb(82.45, 82.45, 82.45);
+}
+
+/*
+| ------------------------------------------
+|   Text Color
+| ------------------------------------------
+*/
+.text-gray-500 {
+  color: #aaaaaa !important;
+}
+
+/*
+| ------------------------------------------
+|   Background Color
+| ------------------------------------------
+*/
+.bg-gray-500 {
+  background-color: #aaaaaa;
+  color: #444444;
+}
+
+/*
+| ------------------------------------------
+|   Text Color
+| ------------------------------------------
+*/
+.text-gray-600 {
+  color: rgb(141.1, 141.1, 141.1) !important;
+}
+
+/*
+| ------------------------------------------
+|   Background Color
+| ------------------------------------------
+*/
+.bg-gray-600 {
+  background-color: rgb(141.1, 141.1, 141.1);
+  color: #FEFEFE;
+}
+
+/*
+| ------------------------------------------
+|   Text Color
+| ------------------------------------------
+*/
+.text-gray-700 {
+  color: rgb(112.2, 112.2, 112.2) !important;
+}
+
+/*
+| ------------------------------------------
+|   Background Color
+| ------------------------------------------
+*/
+.bg-gray-700 {
+  background-color: rgb(112.2, 112.2, 112.2);
+  color: #FEFEFE;
+}
+
+/*
+| ------------------------------------------
+|   Text Color
+| ------------------------------------------
+*/
+.text-gray-800 {
+  color: rgb(83.3, 83.3, 83.3) !important;
+}
+
+/*
+| ------------------------------------------
+|   Background Color
+| ------------------------------------------
+*/
+.bg-gray-800 {
+  background-color: rgb(83.3, 83.3, 83.3);
+  color: #FEFEFE;
+}
+
+/*
+| ------------------------------------------
+|   Text Color
+| ------------------------------------------
+*/
+.text-gray-900 {
+  color: rgb(54.4, 54.4, 54.4) !important;
+}
+
+/*
+| ------------------------------------------
+|   Background Color
+| ------------------------------------------
+*/
+.bg-gray-900 {
+  background-color: rgb(54.4, 54.4, 54.4);
+  color: #FEFEFE;
+}
+
+/*
+| ------------------------------------------
+|   Text Color
+| ------------------------------------------
+*/
+.text-gray-950 {
+  color: rgb(25.5, 25.5, 25.5) !important;
+}
+
+/*
+| ------------------------------------------
+|   Background Color
+| ------------------------------------------
+*/
+.bg-gray-950 {
+  background-color: rgb(25.5, 25.5, 25.5);
+  color: #FEFEFE;
+}
+
+/*
+| ------------------------------------------
+|   Text Color
+| ------------------------------------------
+*/
 .text-rose-50 {
   color: rgb(255, 221.1, 237.9) !important;
 }
@@ -4049,7 +4258,7 @@ table {
 |   Button Default
 | ------------------------------------------
 */
-.btn, .btn-link-indigo, .btn-outline-indigo, .btn-indigo, .btn-link-blue, .btn-outline-blue, .btn-blue, .btn-link-grass, .btn-outline-grass, .btn-grass, .btn-link-sunset, .btn-outline-sunset, .btn-sunset, .btn-link-orange, .btn-outline-orange, .btn-orange, .btn-link-red, .btn-outline-red, .btn-red, .btn-link-rose, .btn-outline-rose, .btn-rose, .btn-link-dark, .btn-outline-dark, .btn-dark, .btn-link-light, .btn-outline-light, .btn-light, .btn-link-info, .btn-outline-info, .btn-info, .btn-link-warning, .btn-outline-warning, .btn-warning, .btn-link-danger, .btn-outline-danger, .btn-danger, .btn-link-success, .btn-outline-success, .btn-success, .btn-link-secondary, .btn-outline-secondary, .btn-secondary, .btn-link-primary, .btn-outline-primary, .btn-primary {
+.btn, .btn-link-indigo, .btn-outline-indigo, .btn-indigo, .btn-link-blue, .btn-outline-blue, .btn-blue, .btn-link-grass, .btn-outline-grass, .btn-grass, .btn-link-sunset, .btn-outline-sunset, .btn-sunset, .btn-link-orange, .btn-outline-orange, .btn-orange, .btn-link-red, .btn-outline-red, .btn-red, .btn-link-rose, .btn-outline-rose, .btn-rose, .btn-link-gray, .btn-outline-gray, .btn-gray, .btn-link-dark, .btn-outline-dark, .btn-dark, .btn-link-light, .btn-outline-light, .btn-light, .btn-link-info, .btn-outline-info, .btn-info, .btn-link-warning, .btn-outline-warning, .btn-warning, .btn-link-danger, .btn-outline-danger, .btn-danger, .btn-link-success, .btn-outline-success, .btn-success, .btn-link-secondary, .btn-outline-secondary, .btn-secondary, .btn-link-primary, .btn-outline-primary, .btn-primary {
   cursor: pointer;
   display: inline-block;
   width: fit-content;
@@ -4320,6 +4529,39 @@ table {
   border: 1px solid transparent;
   background-color: transparent;
   color: #010101;
+}
+
+/*
+| ------------------------------------------
+|   Button Fill
+| ------------------------------------------
+*/
+.btn-gray {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: #AAAAAA;
+  color: #444444;
+}
+
+/*
+| ------------------------------------------
+|   Button Outline
+| ------------------------------------------
+*/
+.btn-outline-gray {
+  border: 1px solid #AAAAAA;
+  background-color: transparent;
+  color: #AAAAAA;
+}
+
+/*
+| ------------------------------------------
+|   Button Link
+| ------------------------------------------
+*/
+.btn-link-gray {
+  border: 1px solid transparent;
+  background-color: transparent;
+  color: #AAAAAA;
 }
 
 /*
