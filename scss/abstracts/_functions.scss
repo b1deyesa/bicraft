@@ -24,7 +24,8 @@
         @if is-dark($background-color) {
             @return map.get(variables.$color, 'light');
         } @else {
-            @return color.adjust($background-color, $lightness: -40%);
+            @return map.get(variables.$color, 'dark');
+            // @return color.adjust($background-color, $lightness: -40%);
         }
     }
 /*
