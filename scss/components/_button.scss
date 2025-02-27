@@ -11,10 +11,11 @@
 .btn {
     cursor: pointer;
     display: inline-block;
+    font-size: map.get(variables.$font-size, 'normal');
     width: fit-content;
     padding: map.get(variables.$spacing, '2') map.get(variables.$spacing, '3');
-    border-radius: 0;
     border: map.get(variables.$border-size, 'default') solid rgba(#000000, 0.2);
+    border-radius: 0;
 }
 
 @each $key, $value in variables.$color {
