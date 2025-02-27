@@ -4625,4 +4625,12 @@ table {
   flex-direction: column-reverse;
 }
 
+.w-full {
+  width: 100%;
+}
+
+.w-fit {
+  width: fit-content;
+}
+
 /*# sourceMappingURL=bicraft.css.map */
