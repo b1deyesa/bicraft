@@ -4261,6 +4261,7 @@ table {
 .btn, .btn-link-indigo, .btn-outline-indigo, .btn-indigo, .btn-link-blue, .btn-outline-blue, .btn-blue, .btn-link-grass, .btn-outline-grass, .btn-grass, .btn-link-sunset, .btn-outline-sunset, .btn-sunset, .btn-link-orange, .btn-outline-orange, .btn-orange, .btn-link-red, .btn-outline-red, .btn-red, .btn-link-rose, .btn-outline-rose, .btn-rose, .btn-link-gray, .btn-outline-gray, .btn-gray, .btn-link-dark, .btn-outline-dark, .btn-dark, .btn-link-light, .btn-outline-light, .btn-light, .btn-link-info, .btn-outline-info, .btn-info, .btn-link-warning, .btn-outline-warning, .btn-warning, .btn-link-danger, .btn-outline-danger, .btn-danger, .btn-link-success, .btn-outline-success, .btn-success, .btn-link-secondary, .btn-outline-secondary, .btn-secondary, .btn-link-primary, .btn-outline-primary, .btn-primary {
   cursor: pointer;
   display: inline-block;
+  font-family: "Figtree";
   font-size: 1rem;
   width: fit-content;
   padding: 0.5rem 1rem;

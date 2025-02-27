@@ -11,6 +11,7 @@
 .btn {
     cursor: pointer;
     display: inline-block;
+    font-family: map.get(variables.$font-family, 'serif');
     font-size: map.get(variables.$font-size, 'normal');
     width: fit-content;
     padding: map.get(variables.$spacing, '2') map.get(variables.$spacing, '3');
