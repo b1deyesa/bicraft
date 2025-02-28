@@ -126,7 +126,7 @@ $utilities: (
         
         @each $key, $value in $values {
             .#{$prefix}-#{$key} {
-                #{$property}: $value;
+                #{$property}: $value !important;
             }
         }
     }
