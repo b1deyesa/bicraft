@@ -4263,6 +4263,8 @@ table {
   display: inline-block;
   font-family: "Figtree";
   font-size: 1rem;
+  text-decoration: none;
+  line-height: 1.25;
   width: fit-content;
   padding: 0.5rem 1rem;
   border: 1px solid rgba(0, 0, 0, 0.2);
