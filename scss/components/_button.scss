@@ -13,6 +13,7 @@
     display: inline-block;
     font-family: map.get(variables.$font-family, 'serif');
     font-size: map.get(variables.$font-size, 'normal');
+    text-decoration: none;
     width: fit-content;
     padding: map.get(variables.$spacing, '2') map.get(variables.$spacing, '3');
     border: map.get(variables.$border-size, 'default') solid rgba(#000000, 0.2);
