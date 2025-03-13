@@ -14,6 +14,12 @@
     |   Padding & Margin
     | ------------------------------------------
     */
+        .p-#{$key} {
+            padding: $value;
+        }
+        .m-#{$key} {
+            margin: $value;
+        }
         $directions: ('t' : top, 'r' : right, 'b' : bottom, 'l' : left, 'x' : null, 'y' : null);
         @each $surfix, $direction in $directions {
             @if ($surfix == 'x' or $surfix == 'y') {
