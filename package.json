@@ -1,0 +1,26 @@
+{
+  "name": "bicraft",
+  "version": "1.0.0",
+  "description": "Bideyesa's UI Library",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sass --watch src/main.scss dist/bicraft.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/b1deyesa/bicraft.git"
+  },
+  "keywords": [
+    "UI",
+    "Library"
+  ],
+  "author": "Imagodeo Bideyesa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/b1deyesa/bicraft/issues"
+  },
+  "homepage": "https://github.com/b1deyesa/bicraft#readme",
+  "devDependencies": {
+    "sass": "^1.89.2"
+  }
+}
