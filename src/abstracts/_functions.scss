@@ -1,0 +1,28 @@
+@use "sass:map";
+@use "sass:string";
+@use "variables" as *;
+
+/*
+ | --------------------------------------------
+ |  Semantic Color
+ | --------------------------------------------
+ */
+    @function semantic($group, $shade, $level: '') {
+        @if ($group == "surface") {
+            @return map.get(map.get(map.get($semantic-colors, $group), $shade), $level);
+        } @else {
+            @return map.get(map.get($semantic-colors, $group), $shade);
+        } 
+    }
+/*
+ | --------------------------------------------
+ |  Token
+ | --------------------------------------------
+ */  
+    @function token($map, $key) {
+        @if ($map == $font-family) {
+            @return string.unquote(map.get($map, $key));
+        } @else {
+            @return map.get($map, $key);
+        }
+    }

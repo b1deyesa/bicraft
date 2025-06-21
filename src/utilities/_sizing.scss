@@ -1,0 +1,37 @@
+@use "../abstracts/variables" as *;
+
+@each $key, $val in $sizing {
+    $is-screen: $key == "screen";
+    /*
+    | --------------------------------------------
+    |   Width
+    | --------------------------------------------
+    */
+        $w-value: if($is-screen, $val + vw, $val);
+        
+        .w-#{$key} {
+            width: $w-value;
+        }
+        .min-w-#{$key} {
+            min-width: $w-value;
+        }
+        .max-w-#{$key} {
+            max-width: $w-value;
+        }
+    /*
+    | --------------------------------------------
+    |   Height
+    | --------------------------------------------
+    */
+        $h-value: if($is-screen, $val + vh, $val);
+        
+        .h-#{$key} {
+            height: $h-value;
+        }
+        .min-h-#{$key} {
+            min-height: $h-value;
+        }
+        .max-h-#{$key} {
+            max-height: $h-value;
+        }
+}

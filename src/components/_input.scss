@@ -1,0 +1,254 @@
+@use "sass:map";
+@use '../abstracts/functions' as *;
+@use '../maps/input' as *;
+
+.form-input {
+    font-family : $font-family;
+    font-size   : $font-size;
+    font-weight : $font-weight;
+    
+    &:has(.input-field) {
+        display          : flex;
+        border-style     : solid;
+        overflow         : hidden;
+        border-radius    : map.get($border-radius, "input");
+        border-width     : map.get($border-width, "input");
+        color            : map.get(map.get($color, "field"), "default");
+        background-color : map.get(map.get($background-color, "field"), "default");
+        border-color     : map.get(map.get($border-color, "field"), "default");
+
+        &:has(:focus) {
+            color            : map.get(map.get($color, "field"), "focus");
+            background-color : map.get(map.get($background-color, "field"), "focus");
+            border-color     : map.get(map.get($border-color, "field"), "focus");
+        }
+        &:has(:disabled) {
+            pointer-events   : none;
+            user-select      : none;
+            color            : map.get(map.get($color, "field"), "disabled");
+            background-color : map.get(map.get($background-color, "field"), "disabled");
+            opacity          : map.get($opacity, "disabled-input");
+        }
+
+        /*
+         | --------------------------------------------
+         |  Arfix
+         | --------------------------------------------
+         */
+            .arfix {
+                display          : flex;
+                align-items      : center;
+                border-style     : solid;
+                border-width     : map.get($border-width, "input");
+                padding          : map.get(map.get($padding, "y"), "input") 
+                                   map.get(map.get($padding, "x"), "input");
+                color            : map.get(map.get($color, "field"), "arfix");
+                background-color : map.get(map.get($background-color, "field"), "arfix");
+                border-color     : map.get(map.get($border-color, "field"), "arfix");                    
+            }
+        /*
+        | --------------------------------------------
+        |  Input
+        | --------------------------------------------
+        */
+            input {
+                width   : 100%;
+                height  : map.get($height, "input");
+                padding : map.get(map.get($padding, "y"), "input") 
+                          map.get(map.get($padding, "x"), "input");
+            }
+        /*
+         | --------------------------------------------
+         |  Textarea
+         | --------------------------------------------
+         */
+            textarea {
+                width       : 100%;
+                line-height : map.get($line-height, "textarea");
+                min-height  : map.get($height, "textarea");
+                padding     : map.get(map.get($padding, "y"), "textarea") 
+                              map.get(map.get($padding, "x"), "textarea");
+            }
+    }
+    &:has(.input-selection) {
+        display        : flex;
+        flex-direction : column;
+        gap            : .8em;
+        /*
+         | --------------------------------------------
+         |  Checkbox
+         | --------------------------------------------
+         */
+            .input-selection:has(input[type="checkbox"]) {
+                position : relative;
+                display  : flex;
+                width    : fit-content;
+                cursor   : pointer;
+                color    : map.get(map.get($color, "selection"), "default");
+                gap      : map.get($gap, "checkbox");
+                
+                @each $state in ("hover", "active", "disabled") {
+                    &:has(:#{$state}) {
+                      color: map.get(map.get($color, "selection"), $state);
+                        .box {
+                            background-color : map.get(map.get(map.get($background-color, "selection"), "unchecked"), $state);
+                            border-color     : map.get(map.get(map.get($border-color, "selection"), "unchecked"), $state);
+                        }
+                        &:has(input:checked) .box {
+                            background-color : map.get(map.get(map.get($background-color, "selection"), "checked"), $state);
+                            border-color     : map.get(map.get(map.get($border-color, "selection"), "checked"), $state);
+                        }
+                    }
+                }
+                
+                .box {
+                    position         : relative;
+                    display          : inline-block;
+                    box-sizing       : border-box;
+                    border-style     : solid;
+                    border-radius    : map.get($border-radius, "checkbox");
+                    border-width     : map.get($border-width, "checkbox");
+                    font-size        : map.get($height, "checkbox");
+                    height           : map.get($height, "checkbox");
+                    width            : map.get($height, "checkbox");
+                    background-color : map.get(map.get(map.get($background-color, "selection"), "unchecked"), "default");
+                    border-color     : map.get(map.get(map.get($border-color, "selection"), "unchecked"), "default");
+                    i {
+                        display  : none;
+                    }
+                }
+                input {
+                    position : absolute;
+                    top      : 0;
+                    right    : 0;
+                    bottom   : 0;
+                    left     : 0;
+                }
+                &:has(input:checked) .box {
+                    background-color : map.get(map.get(map.get($background-color, "selection"), "checked"), "default");
+                    border-color     : map.get(map.get(map.get($border-color, "selection"), "checked"), "default");
+                    i { 
+                        position        : absolute;
+                        display         : flex;
+                        align-items     : center;
+                        justify-content : center;
+                        font-size       : .7em;
+                        top             : 0;
+                        right           : 0;
+                        bottom          : 0;
+                        left            : 0;
+                        color           : black;
+                    }
+                }
+            }
+        /*
+         | --------------------------------------------
+         |  Radio
+         | --------------------------------------------
+         */
+            .input-selection:has(input[type="radio"]) {
+                position : relative;
+                display  : flex;
+                width    : fit-content;
+                cursor   : pointer;
+                color    : map.get(map.get($color, "selection"), "default");
+                gap      : map.get($gap, "checkbox");
+                
+                @each $state in ("hover", "active", "disabled") {
+                    &:has(:#{$state}) {
+                      color: map.get(map.get($color, "selection"), $state);
+                        .box {
+                            background-color : map.get(map.get(map.get($background-color, "selection"), "unchecked"), $state);
+                            border-color     : map.get(map.get(map.get($border-color, "selection"), "unchecked"), $state);
+                        }
+                        &:has(input:checked) .box {
+                            background-color : map.get(map.get(map.get($background-color, "selection"), "checked"), $state);
+                            border-color     : map.get(map.get(map.get($border-color, "selection"), "checked"), $state);
+                        }
+                    }
+                }
+                
+                .box {
+                    position         : relative;
+                    display          : inline-block;
+                    box-sizing       : border-box;
+                    border-style     : solid;
+                    border-radius    : map.get($border-radius, "radio");
+                    border-width     : map.get($border-width, "radio");
+                    font-size        : map.get($height, "radio");
+                    height           : map.get($height, "radio");
+                    width            : map.get($height, "radio");
+                    background-color : map.get(map.get(map.get($background-color, "selection"), "unchecked"), "default");
+                    border-color     : map.get(map.get(map.get($border-color, "selection"), "unchecked"), "default");
+                    &::after {
+                        display  : none;
+                    }
+                }
+                input {
+                    position : absolute;
+                    top      : 0;
+                    right    : 0;
+                    bottom   : 0;
+                    left     : 0;
+                }
+                &:has(input:checked) .box {
+                    display          : flex;
+                    align-items      : center;
+                    justify-content  : center;
+                    padding          : .2em;
+                    background-color : map.get(map.get(map.get($background-color, "selection"), "checked"), "default");
+                    border-color     : map.get(map.get(map.get($border-color, "selection"), "checked"), "default");
+                    &::after { 
+                        content       : '';
+                        display       : flex;
+                        font-size     : 1em;
+                        width         : 100%;
+                        height        : 100%;
+                        background    : black;
+                        border-radius : map.get($border-radius, "radio");
+                    }
+                }
+            }
+        /*
+         | --------------------------------------------
+         |  Option
+         | --------------------------------------------
+         */
+            .input-selection:has(.input-option) {
+                position        : relative;
+                display         : flex;
+                align-items     : center;
+                justify-content : center;
+                box-sizing      : border-box;
+                background      : yellow;
+                border-radius   : map.get($border-radius, "option");
+                border-width    : map.get($border-width, "option");
+                height          : map.get($height, "option");
+                width           : map.get($height, "option");
+                padding         : map.get(map.get($padding, "y"), "option") 
+                                  map.get(map.get($padding, "x"), "option");
+                i {
+                    visibility  : hidden;
+                }
+                &:has(input:checked) {
+                    background      : purple;
+                    i {
+                        visibility  : visible;
+                    }
+                }
+            }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,214 @@
+@use '../abstracts/variables' as variables;
+@use '../abstracts/functions' as *;
+
+$font-family : token(variables.$font-family, "sans-serif");
+$font-size   : token(variables.$font-size, 6);
+$font-weight : token(variables.$font-weight, "regular");
+
+/*
+ | --------------------------------------------
+ |  Border Radius
+ | --------------------------------------------
+ */
+    $border-radius: (
+        "input"    : token(variables.$border-radius, 2),
+        "textarea" : token(variables.$border-radius, 2),
+        "checkbox" : token(variables.$border-radius, 1),
+        "radio"    : token(variables.$border-radius, "full"),
+        "switch"   : token(variables.$border-radius, "full"),
+        "slider"   : token(variables.$border-radius, "full"),
+        "option"   : token(variables.$border-radius, 2),
+        "file"     : token(variables.$border-radius, 2)
+    );
+/*
+ | --------------------------------------------
+ |  Border Width
+ | --------------------------------------------
+ */
+    $border-width: (
+        "input"    : token(variables.$border-width, 1),
+        "textarea" : token(variables.$border-width, 1),
+        "checkbox" : token(variables.$border-width, 1),
+        "radio"    : token(variables.$border-width, 1),
+        "switch"   : token(variables.$border-width, 1),
+        "slider"   : token(variables.$border-width, 1),
+        "option"   : token(variables.$border-width, 1),
+        "file"     : token(variables.$border-width, 1)
+    );
+/*
+ | --------------------------------------------
+ |  Gap
+ | --------------------------------------------
+ */
+    $gap: (
+        "input"    : token(variables.$spacing, 3),
+        "textarea" : token(variables.$spacing, 3),
+        "checkbox" : token(variables.$spacing, 4),
+        "radio"    : token(variables.$spacing, 4),
+        "switch"   : token(variables.$spacing, 4),
+        "slider"   : token(variables.$spacing, 4),
+        "option"   : token(variables.$spacing, 3),
+        "file"     : token(variables.$spacing, 3)
+    );
+/*
+ | --------------------------------------------
+ |  Height
+ | --------------------------------------------
+ */
+    $height: (
+        "input"    : 2em,
+        "textarea" : 5em,
+        "checkbox" : 1em,
+        "radio"    : 1em,
+        "switch"   : 1.875em,
+        "slider"   : 0.5em,
+        "option"   : 2em,
+        "file"     : 2em
+    );
+/*
+ | --------------------------------------------
+ |  Line Height
+ | --------------------------------------------
+ */
+    $line-height: (
+        "textarea" : token(variables.$line-height, "normal")            
+    );
+/*
+ | --------------------------------------------
+ |  Opacity
+ | --------------------------------------------
+ */
+    $opacity: (
+        "disabled-input"    : 40%,
+        "disabled-textarea" : 40%,
+        "disabled-checkbox" : 40%,
+        "disabled-radio"    : 40%,
+        "disabled-switch"   : 40%,
+        "disabled-slider"   : 40%,
+        "disabled-option"   : 40%,
+        "disabled-file"     : 40%
+    );
+/*
+ | --------------------------------------------
+ |  Padding
+ | --------------------------------------------
+ */
+    $padding: (
+        "y": (
+            "input"    : token(variables.$spacing, 2),
+            "textarea" : token(variables.$spacing, 3),
+            "checkbox" : token(variables.$spacing, 1),
+            "radio"    : token(variables.$spacing, 1),
+            "switch"   : token(variables.$spacing, 1),
+            "option"   : token(variables.$spacing, 2),
+            "file"     : token(variables.$spacing, 2)
+        ),
+        "x": (
+            "input"    : token(variables.$spacing, 4),
+            "textarea" : token(variables.$spacing, 4),
+            "checkbox" : token(variables.$spacing, 1),
+            "radio"    : token(variables.$spacing, 1),
+            "switch"   : token(variables.$spacing, 1),
+            "option"   : token(variables.$spacing, 5),
+            "file"     : token(variables.$spacing, 4)
+        )
+    );
+/*
+ | --------------------------------------------
+ |  Color
+ | --------------------------------------------
+ */
+    $color: (
+        "field": (
+            "default"     : semantic("surface", "light", "low"),
+            "focus"       : semantic("surface", "light", "low"),
+            "disabled"    : semantic("surface", "light", "highest"),
+            "error"       : semantic("surface", "light", "low"),
+            "warning"     : semantic("surface", "light", "low"),
+            "success"     : semantic("surface", "light", "low"),
+            "arfix"       : semantic("surface", "light", "highest"),
+            "placeholder" : #FFFFFF30
+        ),
+        "selection": (
+            "default"     : semantic("surface", "light", "low"),
+            "hover"       : semantic("surface", "light", "high"),
+            "active"      : semantic("surface", "light", "low"),
+            "disabled"    : semantic("surface", "light", "highest"),
+            "error"       : semantic("surface", "light", "low"),
+            "warning"     : semantic("surface", "light", "low"),
+            "success"     : semantic("surface", "light", "low")
+        )
+    );
+/*
+ | --------------------------------------------
+ |  Background Color
+ | --------------------------------------------
+ */
+    $background-color: (
+        "field": (
+            "default"     : rgba(#FFFFFF, 5%),
+            "focus"       : rgba(#FFFFFF, 5%),
+            "disabled"    : rgba(#FFFFFF, 20%),
+            "error"       : rgba(#FFFFFF, 5%),
+            "warning"     : rgba(#FFFFFF, 5%),
+            "success"     : rgba(#FFFFFF, 5%),
+            "arfix"       : rgba(#FFFFFF, 5%)
+        ),
+        "selection": (
+            "unchecked": (
+                "default"     : rgba(#FFFFFF, 5%),
+                "hover"       : rgba(#FFFFFF, 10%),
+                "active"      : rgba(#FFFFFF, 20%),
+                "disabled"    : rgba(#FFFFFF, 5%),
+                "error"       : rgba(#FFFFFF, 5%),
+                "warning"     : rgba(#FFFFFF, 5%),
+                "success"     : rgba(#FFFFFF, 5%)
+            ),
+            "checked": (
+                "default"     : semantic("surface", "light", "lowest"),
+                "hover"       : semantic("surface", "light", "high"),
+                "active"      : semantic("surface", "light", "low"),
+                "disabled"    : semantic("surface", "light", "highest"),
+                "error"       : semantic("error", "base"),
+                "warning"     : semantic("warning", "base"),
+                "success"     : semantic("success", "base")
+            )
+        )
+    );
+/*
+ | --------------------------------------------
+ |  Border Color
+ | --------------------------------------------
+ */
+    $border-color: (
+        "field": (
+            "default"     : rgba(#FFFFFF, 30%),
+            "focus"       : rgba(#FFFFFF, 70%),
+            "disabled"    : rgba(#FFFFFF, 30%),
+            "error"       : semantic("error", "base"),
+            "warning"     : semantic("warning", "base"),
+            "success"     : semantic("success", "base"),
+            "arfix"       : rgba(#FFFFFF, 10%)
+        ),
+        "selection": (
+            "unchecked": (
+                "default"     : rgba(#FFFFFF, 30%),
+                "hover"       : rgba(#FFFFFF, 30%),
+                "active"      : semantic("surface", "light", "high"),
+                "disabled"    : rgba(#FFFFFF, 30%),
+                "error"       : semantic("error", "base"),
+                "warning"     : semantic("warning", "base"),
+                
+                "success"     : semantic("success", "base")
+            ),
+            "checked": (
+                "default"     : rgba(#FFFFFF, 30%),
+                "hover"       : rgba(#FFFFFF, 30%),
+                "active"      : rgba(#FFFFFF, 30%),
+                "disabled"    : rgba(#FFFFFF, 30%),
+                "error"       : semantic("error", "base"),
+                "warning"     : semantic("warning", "base"),
+                "success"     : semantic("success", "base")
+            )
+        )
+    );

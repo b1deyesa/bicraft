@@ -1,0 +1,54 @@
+@use "../abstracts/variables";
+
+/*
+ | --------------------------------------------
+ |  Font Size
+ | --------------------------------------------
+ */
+    @each $key, $val in variables.$font-size {
+        .text-#{$key} {
+            font-size: $val;
+        }
+    }
+/*
+ | --------------------------------------------
+ |  Font Weight
+ | --------------------------------------------
+ */
+    @each $name, $weight in variables.$font-weight {
+        .font-#{$name} {
+            font-weight: $weight;
+        }
+    }
+/*
+ | --------------------------------------------
+ |  Line Height
+ | --------------------------------------------
+ */
+    @each $name, $lh in variables.$line-height {
+        .leading-#{$name} {
+            line-height: $lh;
+        }
+    }
+/*
+ | --------------------------------------------
+ |  Letter Spacing
+ | --------------------------------------------
+ */
+    @each $name, $ls in variables.$letter-spacing {
+        .tracking-#{$name} {
+            letter-spacing: $ls;
+        }
+    }
+/*
+ | --------------------------------------------
+ |  Font Family
+ | --------------------------------------------
+ */
+    @each $name, $family in variables.$font-family {
+        @if $family != "" {
+            .font-#{$name} {
+                font-family: #{$family};
+            }
+        }
+    }

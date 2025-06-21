@@ -1,0 +1,57 @@
+@use "sass:map";
+@use "../abstracts/mixins" as *;
+@use "../maps/button" as *;
+
+.btn {
+    display         : inline-flex;
+    align-items     : center;
+    justify-content : center;
+    box-sizing      : border-box;
+    border-style    : solid;
+    user-select     : none;
+    outline         : 0;
+    cursor          : pointer;
+    font-family     : $font-family;
+    
+    &:disabled {
+        pointer-events : none;
+        opacity        : map.get($opacity, "disabled") !important;
+    }
+    &:focus {
+        outline-style : solid;
+        outline-width : map.get($border-width, "focus") !important;
+    }
+    &:active {
+        outline : 0;
+    }
+    /*
+     | --------------------------------------------
+     |  Colors
+     | --------------------------------------------
+     */
+        @each $variant, $styles in $colors {
+            @each $style, $states in $styles {
+                $selector: if($style == "fill", "&-#{$variant}", "&-#{$style}-#{$variant}");
+                #{$selector} {
+                    @each $state, $maps in $states {
+                        #{if($state == "default", "&", "&:#{$state}")} {
+                            @include generate-map($maps);
+                        }
+                    }
+                }
+            }
+        }
+    /*
+     | --------------------------------------------
+     |  Size
+     | --------------------------------------------
+     */
+        @each $size, $maps in $sizes {
+            &-#{$size} {
+                @include generate-map($maps);
+                i {
+                    font-size: .8em;
+                }
+            }
+        }
+}

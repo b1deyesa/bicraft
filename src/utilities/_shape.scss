@@ -1,0 +1,22 @@
+@use "../abstracts/variables" as *;
+
+/*
+ | --------------------------------------------
+ |  Border Radius
+ | --------------------------------------------
+ */
+    @each $key, $val in $border-radius {
+        .rounded-#{$key} {
+            border-radius: $val;
+        }
+    }
+/*
+ | --------------------------------------------
+ |  Border Width
+ | --------------------------------------------
+ */
+    @each $key, $val in $border-width {
+        .border-#{$key} {
+            border-width: $val;
+        }
+    }

@@ -1,0 +1,23 @@
+@use "../abstracts/variables" as *;
+
+@each $group, $shades in $semantic-colors {
+    @if type-of($shades)=="map"and map-has-key($shades, "base") and map-has-key($shades, "on-base") {
+    /*
+     | --------------------------------------------
+     |  Background Color
+     | --------------------------------------------
+     */
+        .bg-#{$group} {
+            background-color: map.get($shades, "base");
+            color: map.get($shades, "on-base");
+        }
+    /*
+     | --------------------------------------------
+     |  Text Color
+     | --------------------------------------------
+     */
+        .text-#{$group} {
+            color: map.get($shades, "on-base");
+        }
+    }
+}

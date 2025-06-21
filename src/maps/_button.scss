@@ -1,0 +1,306 @@
+@use "../abstracts/variables";
+@use "../abstracts/functions" as *;
+
+$font-family  : token(variables.$font-family, "sans-serif");
+$border-width : ("focus" : token(variables.$border-width, 3));
+$opacity      : ("disabled" : .5);
+
+/*
+ | --------------------------------------------
+ |  Size
+ | --------------------------------------------
+ */
+    $sizes: (
+        "lg": (
+            "border-radius" : token(variables.$border-radius, 2),
+            "border-width"  : token(variables.$border-width, 2),
+            "font-size"     : token(variables.$font-size, 6),
+            "font-weight"   : token(variables.$font-weight, "regular"),
+            "min-height"    : 2.5em,
+            "gap"           : token(variables.$spacing, 2),
+            "padding"       : token(variables.$spacing, 2) token(variables.$spacing, 4)
+        ),
+        "md": (
+            "border-radius" : token(variables.$border-radius, 2),
+            "border-width"  : token(variables.$border-width, 2),
+            "font-size"     : token(variables.$font-size, 6),
+            "font-weight"   : token(variables.$font-weight, "regular"),
+            "min-height"    : 2em,
+            "gap"           : token(variables.$spacing, 2),
+            "padding"       : token(variables.$spacing, 2) token(variables.$spacing, 4)
+        ),
+        "sm": (
+            "border-radius" : token(variables.$border-radius, 2),
+            "border-width"  : token(variables.$border-width, 2),
+            "font-size"     : token(variables.$font-size, 7),
+            "font-weight"   : token(variables.$font-weight, "regular"),
+            "min-height"    : 1.75em,
+            "gap"           : token(variables.$spacing, 2),
+            "padding"       : token(variables.$spacing, 2) token(variables.$spacing, 3)
+        ),
+    );
+/*
+ | --------------------------------------------
+ |  Color
+ | --------------------------------------------
+ */
+    $colors: (
+        "primary": (
+            "fill": (
+                "default": (
+                    "color"            : semantic("primary", "on-base"),
+                    "background-color" : semantic("primary", "base"),
+                    "border-color"     : semantic("primary", "base")
+                ),
+                "hover": (
+                    "color"            : semantic("primary", "on-base"),
+                    "background-color" : semantic("primary", "on-container"),
+                    "border-color"     : semantic("primary", "base")
+                ),
+                "focus": (
+                    "color"            : semantic("primary", "on-base"),
+                    "background-color" : semantic("primary", "base"),
+                    "border-color"     : semantic("primary", "container"),
+                    "outline-color"    : semantic("primary", "container")
+                ),
+                "active": (
+                    "color"            : semantic("primary", "on-base"),
+                    "background-color" : semantic("primary", "on-container"),
+                    "border-color"     : semantic("primary", "on-container")
+                ),
+                "disabled": (
+                    "color"            : semantic("primary", "on-base"),
+                    "background-color" : semantic("primary", "base"),
+                    "border-color"     : semantic("primary", "base")
+                )
+            ),
+            "outline": (
+                "default": (
+                    "color"            : semantic("primary", "base"),
+                    "background-color" : transparent,
+                    "border-color"     : semantic("primary", "base")
+                ),
+                "hover": (
+                    "color"            : semantic("primary", "on-container"),
+                    "background-color" : transparent,
+                    "border-color"     : semantic("primary", "base")
+                ),
+                "focus": (
+                    "color"            : semantic("primary", "base"),
+                    "background-color" : transparent,
+                    "border-color"     : semantic("primary", "on-container"),
+                    "outline-color"    : semantic("primary", "on-container")
+                ),
+                "active": (
+                    "color"            : semantic("primary", "on-container"),
+                    "background-color" : transparent,
+                    "border-color"     : semantic("primary", "on-container")
+                ),
+                "disabled": (
+                    "color"            : semantic("primary", "base"),
+                    "background-color" : transparent,
+                    "border-color"     : semantic("primary", "base")
+                )
+            ),
+            "text": (
+                "default": (
+                    "color"            : semantic("primary", "base"),
+                    "background-color" : transparent,
+                    "border-color"     : transparent
+                ),
+                "hover": (
+                    "color"            : semantic("primary", "on-container"),
+                    "background-color" : transparent,
+                    "border-color"     : transparent
+                ),
+                "focus": (
+                    "color"            : semantic("primary", "base"),
+                    "background-color" : transparent,
+                    "border-color"     : semantic("primary", "on-container"),
+                    "outline-color"    : semantic("primary", "on-container")
+                ),
+                "active": (
+                    "color"            : semantic("primary", "on-container"),
+                    "background-color" : transparent,
+                    "border-color"     : transparent
+                ),
+                "disabled": (
+                    "color"            : semantic("primary", "base"),
+                    "background-color" : transparent,
+                    "border-color"     : transparent
+                )
+            )
+        ),
+        "secondary": (
+            "fill": (
+                "default": (
+                    "color"            : semantic("secondary", "on-base"),
+                    "background-color" : semantic("secondary", "base"),
+                    "border-color"     : semantic("secondary", "base")
+                ),
+                "hover": (
+                    "color"            : semantic("secondary", "on-base"),
+                    "background-color" : semantic("secondary", "on-container"),
+                    "border-color"     : semantic("secondary", "base")
+                ),
+                "focus": (
+                    "color"            : semantic("secondary", "on-base"),
+                    "background-color" : semantic("secondary", "base"),
+                    "border-color"     : semantic("secondary", "container"),
+                    "outline-color"    : semantic("secondary", "container")
+                ),
+                "active": (
+                    "color"            : semantic("secondary", "on-base"),
+                    "background-color" : semantic("secondary", "on-container"),
+                    "border-color"     : semantic("secondary", "on-container")
+                ),
+                "disabled": (
+                    "color"            : semantic("secondary", "on-base"),
+                    "background-color" : semantic("secondary", "base"),
+                    "border-color"     : semantic("secondary", "base")
+                )
+            ),
+            "outline": (
+                "default": (
+                    "color"            : semantic("secondary", "base"),
+                    "background-color" : transparent,
+                    "border-color"     : semantic("secondary", "base")
+                ),
+                "hover": (
+                    "color"            : semantic("secondary", "on-container"),
+                    "background-color" : transparent,
+                    "border-color"     : semantic("secondary", "base")
+                ),
+                "focus": (
+                    "color"            : semantic("secondary", "base"),
+                    "background-color" : transparent,
+                    "border-color"     : semantic("secondary", "container"),
+                    "outline-color"    : semantic("secondary", "container")
+                ),
+                "active": (
+                    "color"            : semantic("secondary", "on-container"),
+                    "background-color" : transparent,
+                    "border-color"     : semantic("secondary", "on-container")
+                ),
+                "disabled": (
+                    "color"            : semantic("secondary", "base"),
+                    "background-color" : transparent,
+                    "border-color"     : semantic("secondary", "base")
+                )
+            ),
+            "text": (
+                "default": (
+                    "color"            : semantic("secondary", "base"),
+                    "background-color" : transparent,
+                    "border-color"     : transparent
+                ),
+                "hover": (
+                    "color"            : semantic("secondary", "on-container"),
+                    "background-color" : transparent,
+                    "border-color"     : transparent
+                ),
+                "focus": (
+                    "color"            : semantic("secondary", "base"),
+                    "background-color" : transparent,
+                    "border-color"     : semantic("secondary", "container"),
+                    "outline-color"    : semantic("secondary", "container")
+                ),
+                "active": (
+                    "color"            : semantic("secondary", "on-container"),
+                    "background-color" : transparent,
+                    "border-color"     : transparent
+                ),
+                "disabled": (
+                    "color"            : semantic("secondary", "base"),
+                    "background-color" : transparent,
+                    "border-color"     : transparent
+                )
+            )
+        ),
+        "tertiary": (
+            "fill": (
+                "default": (
+                    "color"            : semantic("tertiary", "on-base"),
+                    "background-color" : semantic("tertiary", "base"),
+                    "border-color"     : semantic("tertiary", "base")
+                ),
+                "hover": (
+                    "color"            : semantic("tertiary", "on-base"),
+                    "background-color" : semantic("tertiary", "on-container"),
+                    "border-color"     : semantic("tertiary", "base")
+                ),
+                "focus": (
+                    "color"            : semantic("tertiary", "on-base"),
+                    "background-color" : semantic("tertiary", "base"),
+                    "border-color"     : semantic("tertiary", "container"),
+                    "outline-color"    : semantic("tertiary", "container")
+                ),
+                "active": (
+                    "color"            : semantic("tertiary", "on-base"),
+                    "background-color" : semantic("tertiary", "on-container"),
+                    "border-color"     : semantic("tertiary", "on-container")
+                ),
+                "disabled": (
+                    "color"            : semantic("tertiary", "on-base"),
+                    "background-color" : semantic("tertiary", "base"),
+                    "border-color"     : semantic("tertiary", "base")
+                )
+            ),
+            "outline": (
+                "default": (
+                    "color"            : semantic("tertiary", "base"),
+                    "background-color" : transparent,
+                    "border-color"     : semantic("tertiary", "base")
+                ),
+                "hover": (
+                    "color"            : semantic("tertiary", "on-container"),
+                    "background-color" : transparent,
+                    "border-color"     : semantic("tertiary", "base")
+                ),
+                "focus": (
+                    "color"            : semantic("tertiary", "base"),
+                    "background-color" : transparent,
+                    "border-color"     : semantic("tertiary", "container"),
+                    "outline-color"    : semantic("tertiary", "container")
+                ),
+                "active": (
+                    "color"            : semantic("tertiary", "on-container"),
+                    "background-color" : transparent,
+                    "border-color"     : semantic("tertiary", "on-container")
+                ),
+                "disabled": (
+                    "color"            : semantic("tertiary", "base"),
+                    "background-color" : transparent,
+                    "border-color"     : semantic("tertiary", "base")
+                )
+            ),
+            "text": (
+                "default": (
+                    "color"            : semantic("tertiary", "base"),
+                    "background-color" : transparent,
+                    "border-color"     : transparent
+                ),
+                "hover": (
+                    "color"            : semantic("tertiary", "on-container"),
+                    "background-color" : transparent,
+                    "border-color"     : transparent
+                ),
+                "focus": (
+                    "color"            : semantic("tertiary", "base"),
+                    "background-color" : transparent,
+                    "border-color"     : semantic("tertiary", "container"),
+                    "outline-color"    : semantic("tertiary", "container")
+                ),
+                "active": (
+                    "color"            : semantic("tertiary", "on-container"),
+                    "background-color" : transparent,
+                    "border-color"     : transparent
+                ),
+                "disabled": (
+                    "color"            : semantic("tertiary", "base"),
+                    "background-color" : transparent,
+                    "border-color"     : transparent
+                )
+            )
+        )
+    );
