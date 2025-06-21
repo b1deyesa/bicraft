@@ -1,6 +1,10 @@
 @use 'base/reset';
 @use 'components/button';
 @use 'components/input';
+@use 'utilities/color';
+@use 'utilities/shape';
+@use 'utilities/sizing';
+@use 'utilities/typography';
 
 :root {
     font-size: 14px;
