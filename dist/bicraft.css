@@ -11,6 +11,7 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -1235,7 +1236,7 @@ select {
 }
 
 .font-round {
-  font-family: 'Quicksand', 'Nunito', 'Poppins', sans-serif;
+  font-family: 'Outfit', sans-serif;
 }
 
 .font-handwrite {
