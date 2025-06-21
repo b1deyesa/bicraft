@@ -1246,18 +1246,4 @@ select {
   font-family: 'Press Start 2P', 'VT323', monospace;
 }
 
-:root {
-  font-size: 14px;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
-  background: #111;
-}
-body > div {
-  display: flex;
-}
-
 /*# sourceMappingURL=bicraft.css.map */
