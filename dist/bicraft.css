@@ -132,6 +132,7 @@ select {
   justify-content: center;
   box-sizing: border-box;
   border-style: solid;
+  height: fit-content;
   user-select: none;
   outline: 0;
   cursor: pointer;
