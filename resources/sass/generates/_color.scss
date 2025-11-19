@@ -36,3 +36,12 @@ $tone-middle : math.ceil(math.div($tone-count, 2));
 		}
 	}
 }
+
+@each $name, $variants in $semantic-color {
+	@each $variant, $value in $variants {
+		$key: if($variant == 'base', $name, '#{$name}-#{$variant}');
+		$color: map.merge($color, (
+			$key: $value
+		));
+	}
+}

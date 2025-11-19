@@ -3,3 +3,7 @@
 @forward 'abstracts/abstracts';
 @forward 'generates/generates';
 @forward 'utilities/utilities';
+
+body {
+    background: var(--bg-);
+}

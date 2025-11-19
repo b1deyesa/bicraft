@@ -2658,6 +2658,30 @@ hr {
   --color-stone-950-80: rgba(12.5454545455, 11.2727272727, 10.6363636364, 0.8);
   --color-stone-950-90: rgba(12.5454545455, 11.2727272727, 10.6363636364, 0.9);
   --color-stone-950-100: rgb(12.5454545455, 11.2727272727, 10.6363636364);
+  --color-primary: #F4F4F4;
+  --color-primary-container: #1A1A1A;
+  --color-primary-on-base: #000000;
+  --color-primary-on-container: #C4C4C4;
+  --color-secondary: #00A873;
+  --color-secondary-container: #9FFFE3;
+  --color-secondary-on-base: #FFFFFF;
+  --color-secondary-on-container: #004A35;
+  --color-tertiary: #0073B7;
+  --color-tertiary-container: #C3F2FF;
+  --color-tertiary-on-base: #FFFFFF;
+  --color-tertiary-on-container: #00577C;
+  --color-error: #E74C3C;
+  --color-error-container: #FFC8C8;
+  --color-error-on-base: #FFFFFF;
+  --color-error-on-container: #9C0000;
+  --color-warning: #FFD166;
+  --color-warning-container: #FFF1C1;
+  --color-warning-on-base: #7F4F00;
+  --color-warning-on-container: #8A6F00;
+  --color-success: #28A745;
+  --color-success-container: #C8FFD8;
+  --color-success-on-base: #FFFFFF;
+  --color-success-on-container: #004F2D;
 }
 
 /*
@@ -13586,6 +13610,102 @@ pre {
   background-color: rgb(12.5454545455, 11.2727272727, 10.6363636364);
 }
 
+.bg-primary {
+  background-color: #F4F4F4;
+}
+
+.bg-primary-container {
+  background-color: #1A1A1A;
+}
+
+.bg-primary-on-base {
+  background-color: #000000;
+}
+
+.bg-primary-on-container {
+  background-color: #C4C4C4;
+}
+
+.bg-secondary {
+  background-color: #00A873;
+}
+
+.bg-secondary-container {
+  background-color: #9FFFE3;
+}
+
+.bg-secondary-on-base {
+  background-color: #FFFFFF;
+}
+
+.bg-secondary-on-container {
+  background-color: #004A35;
+}
+
+.bg-tertiary {
+  background-color: #0073B7;
+}
+
+.bg-tertiary-container {
+  background-color: #C3F2FF;
+}
+
+.bg-tertiary-on-base {
+  background-color: #FFFFFF;
+}
+
+.bg-tertiary-on-container {
+  background-color: #00577C;
+}
+
+.bg-error {
+  background-color: #E74C3C;
+}
+
+.bg-error-container {
+  background-color: #FFC8C8;
+}
+
+.bg-error-on-base {
+  background-color: #FFFFFF;
+}
+
+.bg-error-on-container {
+  background-color: #9C0000;
+}
+
+.bg-warning {
+  background-color: #FFD166;
+}
+
+.bg-warning-container {
+  background-color: #FFF1C1;
+}
+
+.bg-warning-on-base {
+  background-color: #7F4F00;
+}
+
+.bg-warning-on-container {
+  background-color: #8A6F00;
+}
+
+.bg-success {
+  background-color: #28A745;
+}
+
+.bg-success-container {
+  background-color: #C8FFD8;
+}
+
+.bg-success-on-base {
+  background-color: #FFFFFF;
+}
+
+.bg-success-on-container {
+  background-color: #004F2D;
+}
+
 /*
  | --------------------------------------------------
  |  Text Color
@@ -22787,6 +22907,102 @@ pre {
   color: rgb(12.5454545455, 11.2727272727, 10.6363636364);
 }
 
+.text-primary {
+  color: #F4F4F4;
+}
+
+.text-primary-container {
+  color: #1A1A1A;
+}
+
+.text-primary-on-base {
+  color: #000000;
+}
+
+.text-primary-on-container {
+  color: #C4C4C4;
+}
+
+.text-secondary {
+  color: #00A873;
+}
+
+.text-secondary-container {
+  color: #9FFFE3;
+}
+
+.text-secondary-on-base {
+  color: #FFFFFF;
+}
+
+.text-secondary-on-container {
+  color: #004A35;
+}
+
+.text-tertiary {
+  color: #0073B7;
+}
+
+.text-tertiary-container {
+  color: #C3F2FF;
+}
+
+.text-tertiary-on-base {
+  color: #FFFFFF;
+}
+
+.text-tertiary-on-container {
+  color: #00577C;
+}
+
+.text-error {
+  color: #E74C3C;
+}
+
+.text-error-container {
+  color: #FFC8C8;
+}
+
+.text-error-on-base {
+  color: #FFFFFF;
+}
+
+.text-error-on-container {
+  color: #9C0000;
+}
+
+.text-warning {
+  color: #FFD166;
+}
+
+.text-warning-container {
+  color: #FFF1C1;
+}
+
+.text-warning-on-base {
+  color: #7F4F00;
+}
+
+.text-warning-on-container {
+  color: #8A6F00;
+}
+
+.text-success {
+  color: #28A745;
+}
+
+.text-success-container {
+  color: #C8FFD8;
+}
+
+.text-success-on-base {
+  color: #FFFFFF;
+}
+
+.text-success-on-container {
+  color: #004F2D;
+}
+
 /*
  | --------------------------------------------------
  |  Container
@@ -23511,6 +23727,10 @@ pre {
 
 .height-max-100 {
   max-height: 100%;
+}
+
+body {
+  background: var(--bg-);
 }
 
 /*# sourceMappingURL=app.css.map */
