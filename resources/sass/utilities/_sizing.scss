@@ -1,0 +1,26 @@
+@use '../abstracts/mixins' as *;
+@use '../variables/sizing' as *;
+@use '../maps/sizing';
+
+/*
+ | --------------------------------------------------
+ |  Width
+ | --------------------------------------------------
+ */
+    @include utility(
+        $default-prop : width,
+        $prefix       : 'width',
+        $variable     : $sizing,
+        $maps         : sizing.$width
+    );
+/*
+ | --------------------------------------------------
+ |  Height
+ | --------------------------------------------------
+ */
+    @include utility(
+        $default-prop : height,
+        $prefix       : 'height',
+        $variable     : $sizing,
+        $maps         : sizing.$height
+    );

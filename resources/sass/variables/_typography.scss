@@ -1,0 +1,168 @@
+/*
+ | --------------------------------------------------
+ |  Font Family
+ | --------------------------------------------------
+ */
+    @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,100..900;1,100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap');
+
+    $font-family: (
+        'serif'      : "'DM Serif Text', serif",
+        'sans-serif' : "'Gantari', sans-serif",
+        'mono'       : "'Spline Sans Mono', monospace",
+        'script'     : "'Brush Script MT', cursive",
+        'round'      : "'Outfit', sans-serif",
+        'handwrite'  : "'Dancing Script', cursive",
+        'pixel'      : "'Press Start 2P', monospace"
+    );
+/*
+ | --------------------------------------------------
+ |  Font Size
+ | --------------------------------------------------
+ */
+    $font-size: (
+        '4xl' : 3.2em,
+        '3xl' : 2.5em,
+        '2xl' : 2em,
+        'xl'  : 1.6em,
+        'lg'  : 1.3em,
+        'md'  : 1em,
+        'sm'  : .9em,
+        'xs'  : .75em
+    );
+/*
+ | --------------------------------------------------
+ |  Font Style
+ | --------------------------------------------------
+ */
+    $font-style: (
+        'normal'  : normal,
+        'italic'  : italic,
+        'oblique' : oblique
+    );
+/*
+ | --------------------------------------------------
+ |  Font Weight
+ | --------------------------------------------------
+ */
+    $font-weight: (
+        'thin'      : 200,
+        'regular'   : 300,
+        'semi-bold' : 500,
+        'bold'      : 700,
+        'black'     : 900
+    );
+/*
+ | --------------------------------------------------
+ |  Letter Spacing
+ | --------------------------------------------------
+ */
+    $letter-spacing: (
+        'normal'      : 0em,
+        'loose'       : 0.05em,
+        'extra-loose' : 0.1em
+    );
+/*
+ | --------------------------------------------------
+ |  Line Height
+ | --------------------------------------------------
+ */
+    $line-height: (
+        'loose'  : 1.8,
+        'normal' : 1.2,
+        'tight'  : 1.0
+    );
+/*
+ | --------------------------------------------------
+ |  Text Decoration
+ | --------------------------------------------------
+ */
+    $text-decoration: (
+        'none'         : none,
+        'underline'    : underline,
+        'line-through' : line-through,
+        'overline'     : overline
+    );
+/*
+ | --------------------------------------------------
+ |  Text Transform
+ | --------------------------------------------------
+ */
+    $text-transform: (
+        'none'       : none,
+        'uppercase'  : uppercase,
+        'lowercase'  : lowercase,
+        'capitalize' : capitalize
+    );
+/*
+ | --------------------------------------------------
+ |  Word Spacing
+ | --------------------------------------------------
+ */
+    $word-spacing: (
+        'normal'      : 0em,
+        'loose'       : 0.05em,
+        'extra-loose' : 0.1em
+    );
+/*
+ | --------------------------------------------------
+ |  White Space
+ | --------------------------------------------------
+ */
+    $white-space: (
+        'normal' : normal,
+        'nowrap' : nowrap,
+        'wrap'   : wrap,
+        'pre'    : pre
+    );
+/*
+ | --------------------------------------------------
+ |  Text Align
+ | --------------------------------------------------
+ */
+    $text-align: (
+        'left'    : left,
+        'center'  : center,
+        'right'   : right,
+        'justify' : justify
+    );
+/*
+ | --------------------------------------------------
+ |  Text Indent
+ | --------------------------------------------------
+ */
+    $text-indent: (
+        'normal'      : 0em,
+        'loose'       : 0.05em,
+        'extra-loose' : 0.1em
+    );
+/*
+ | --------------------------------------------------
+ |  Direction
+ | --------------------------------------------------
+ */
+    $direction: (
+        'ltr' : ltr,
+        'rtl' : rtl
+    );
+/*
+ | --------------------------------------------------
+ |  Writing Mode
+ | --------------------------------------------------
+ */
+    $writing-mode: (
+        'horizontal' : horizontal-tb,
+        'vertical'   : vertical-rl
+    );
+/*
+ | --------------------------------------------------
+ |  Vertical Align
+ | --------------------------------------------------
+ */
+    $vertical-align: (
+        'sub'   : sub,
+        'super' : super
+    );

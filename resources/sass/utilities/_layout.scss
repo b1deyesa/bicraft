@@ -1,0 +1,32 @@
+@use '../abstracts/functions' as *;
+@use '../abstracts/mixins' as *;
+@use '../variables/layout' as *;
+@use '../variables/spacing' as *;
+
+/*
+ | --------------------------------------------------
+ |  Container
+ | --------------------------------------------------
+ */
+    .container {
+        display   : flex;
+        width     : 100%;
+        max-width : 80%;
+        margin    : auto;
+    }
+    
+    .container-fluid {
+        display : flex;
+        width   : 100%;
+        padding : token($spacing, 2);
+    }
+/*
+ | --------------------------------------------------
+ |  Display
+ | --------------------------------------------------
+ */
+    @include utility(
+        $default-prop : display,
+        $prefix       : 'display',
+        $variable     : $display
+    );

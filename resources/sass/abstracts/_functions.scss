@@ -1,0 +1,23 @@
+@use 'sass:map';
+@use 'sass:string';
+@use '../variables/variables' as *;
+
+/*
+ | --------------------------------------------------
+ |  Token
+ | --------------------------------------------------
+ */
+    @function token($variable, $key) {
+        $map: if(map.has-key($variable, 'values'), values($variable), $variable);
+        $value: map.get($map, $key);
+
+        @return if($variable == $font-family, string.unquote($value), $value);
+    }
+/*
+ | --------------------------------------------------
+ |  To CSS Variable
+ | --------------------------------------------------
+ */
+    @function to-css-variable($prefix, $key) {
+        @return '--#{$prefix}-#{$key}';
+    }

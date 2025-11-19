@@ -1,0 +1,153 @@
+@use '../abstracts/mixins' as *;
+@use '../variables/typography' as *;
+
+/*
+ | --------------------------------------------------
+ |  Font Family
+ | --------------------------------------------------
+ */
+    @include utility(
+        $default-prop : font-family,
+        $prefix       : 'font-family',
+        $variable     : $font-family
+    );
+/*
+ | --------------------------------------------------
+ |  Font Size
+ | --------------------------------------------------
+ */
+    @include utility(
+        $default-prop : font-size,
+        $prefix       : 'font-size',
+        $variable     : $font-size
+    );
+/*
+ | --------------------------------------------------
+ |  Font Style
+ | --------------------------------------------------
+ */
+    @include utility(
+        $default-prop : font-style,
+        $prefix       : 'font-style',
+        $variable     : $font-style
+    );
+/*
+ | --------------------------------------------------
+ |  Font Weight
+ | --------------------------------------------------
+ */
+    @include utility(
+        $default-prop : font-weight,
+        $prefix       : 'font-weight',
+        $variable     : $font-weight
+    );
+/*
+ | --------------------------------------------------
+ |  Letter Spacing
+ | --------------------------------------------------
+ */
+    @include utility(
+        $default-prop : letter-spacing,
+        $prefix       : 'letter-spacing',
+        $variable     : $letter-spacing
+    );
+/*
+ | --------------------------------------------------
+ |  Line Height
+ | --------------------------------------------------
+ */
+    @include utility(
+        $default-prop : line-height,
+        $prefix       : 'line-height',
+        $variable     : $line-height
+    );
+/*
+ | --------------------------------------------------
+ |  Text Decoration
+ | --------------------------------------------------
+ */
+    @include utility(
+        $default-prop : text-decoration,
+        $prefix       : 'text-decoration',
+        $variable     : $text-decoration
+    );
+/*
+ | --------------------------------------------------
+ |  Text Transform
+ | --------------------------------------------------
+ */
+    @include utility(
+        $default-prop : text-transform,
+        $prefix       : 'text-transform',
+        $variable     : $text-transform
+    );
+/*
+ | --------------------------------------------------
+ |  Word Spacing
+ | --------------------------------------------------
+ */
+    @include utility(
+        $default-prop : word-spacing,
+        $prefix       : 'word-spacing',
+        $variable     : $word-spacing
+    );
+/*
+ | --------------------------------------------------
+ |  White Space
+ | --------------------------------------------------
+ */
+    @include utility(
+        $default-prop : white-space,
+        $prefix       : 'white-space',
+        $variable     : $white-space
+    );
+/*
+ | --------------------------------------------------
+ |  Text Align
+ | --------------------------------------------------
+ */
+    @include utility(
+        $default-prop : text-align,
+        $prefix       : 'text-align',
+        $variable     : $text-align
+    );
+/*
+ | --------------------------------------------------
+ |  Text Indent
+ | --------------------------------------------------
+ */
+    @include utility(
+        $default-prop : text-indent,
+        $prefix       : 'text-indent',
+        $variable     : $text-indent
+    );
+/*
+ | --------------------------------------------------
+ |  Direction
+ | --------------------------------------------------
+ */
+    @include utility(
+        $default-prop : direction,
+        $prefix       : 'direction',
+        $variable     : $direction
+    );
+/*
+ | --------------------------------------------------
+ |  Writing Mode
+ | --------------------------------------------------
+ */
+    @include utility(
+        $default-prop : writing-mode,
+        $prefix       : 'writing-mode',
+        $variable     : $writing-mode
+    );
+/*
+ | --------------------------------------------------
+ |  Vertical Align
+ | --------------------------------------------------
+ */
+    @include utility(
+        $default-prop : vertical-align,
+        $prefix       : 'vertical-align',
+        $variable     : $vertical-align
+    );

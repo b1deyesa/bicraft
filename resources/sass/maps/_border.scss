@@ -1,0 +1,28 @@
+/*
+ | --------------------------------------------------
+ |  Border Radius
+ | --------------------------------------------------
+ */
+    $border-radius: (
+        'top-left'     : 'border-top-left-radius',
+        'top-right'    : 'border-top-right-radius',
+        'bottom-left'  : 'border-bottom-left-radius',
+        'bottom-right' : 'border-bottom-right-radius',
+        'top'          : ('border-top-left-radius', 'border-top-right-radius'),
+        'bottom'       : ('border-bottom-left-radius', 'border-bottom-right-radius'),
+        'left'         : ('border-top-left-radius', 'border-bottom-left-radius'),
+        'right'        : ('border-top-right-radius', 'border-bottom-right-radius')
+    );
+/*
+ | --------------------------------------------------
+ |  Border Width
+ | --------------------------------------------------
+ */    
+    $border-width: (
+        'top'    : 'border-top-width',
+        'bottom' : 'border-bottom-width',
+        'left'   : 'border-left-width',
+        'right'  : 'border-right-width',
+        'x'      : ('border-left-width', 'border-right-width'),
+        'y'      : ('border-top-width', 'border-bottom-width')
+    );

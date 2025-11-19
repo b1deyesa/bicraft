@@ -1,0 +1,63 @@
+@use '../abstracts/mixins' as *;
+@use '../variables/alignment' as *;
+
+/*
+ | --------------------------------------------------
+ |  Align Items
+ | --------------------------------------------------
+ */
+    @include utility(
+        $default-prop : align-items,
+        $prefix       : 'align-items',
+        $variable     : $align-items
+    );
+/*
+ | --------------------------------------------------
+ |  Align Self
+ | --------------------------------------------------
+ */
+    @include utility(
+        $default-prop : align-self,
+        $prefix       : 'align-self',
+        $variable     : $align-self
+    );
+/*
+ | --------------------------------------------------
+ |  Align Content
+ | --------------------------------------------------
+ */
+    @include utility(
+        $default-prop : align-content,
+        $prefix       : 'align-content',
+        $variable     : $align-content
+    );
+/*
+ | --------------------------------------------------
+ |  Justify Items
+ | --------------------------------------------------
+ */
+    @include utility(
+        $default-prop : justify-items,
+        $prefix       : 'justify-items',
+        $variable     : $justify-items
+    );
+/*
+ | --------------------------------------------------
+ |  Justify Self
+ | --------------------------------------------------
+ */
+    @include utility(
+        $default-prop : justify-self,
+        $prefix       : 'justify-self',
+        $variable     : $justify-self
+    );
+/*
+ | --------------------------------------------------
+ |  Justify Content
+ | --------------------------------------------------
+ */
+    @include utility(
+        $default-prop : justify-content,
+        $prefix       : 'justify-content',
+        $variable     : $justify-content
+    );

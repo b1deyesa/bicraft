@@ -1,0 +1,48 @@
+@use '../variables/variables' as *;
+@use '../generates/generates' as *;
+@use '../abstracts/mixins' as *;
+
+:root {
+    /*
+     | --------------------------------------------------
+     |  Typography
+     | --------------------------------------------------
+     */
+        @include css-variable($font-family, 'font-family');
+        @include css-variable($font-size, 'font-size');
+        @include css-variable($font-style, 'font-style');
+        @include css-variable($font-weight, 'font-weight');
+        @include css-variable($letter-spacing, 'letter-spacing');
+        @include css-variable($line-height, 'line-height');
+        @include css-variable($text-decoration, 'text-decoration');
+        @include css-variable($text-transform, 'text-transform');
+        @include css-variable($word-spacing, 'word-spacing');
+        @include css-variable($white-space, 'white-space');
+        @include css-variable($text-align, 'text-align');
+        @include css-variable($text-indent, 'text-indent');
+        @include css-variable($direction, 'direction');
+        @include css-variable($writing-mode, 'writing-mode');
+        @include css-variable($vertical-align, 'vertical-align');
+    /*
+     | --------------------------------------------------
+     |  Spacing
+     | --------------------------------------------------
+     */
+        @include css-variable($spacing, 'spacing');
+    /*
+     | --------------------------------------------------
+     |  Border
+     | --------------------------------------------------
+     */
+        @include css-variable($border-radius, 'border-radius');
+        @include css-variable($border-width, 'border-width');
+        @include css-variable($border-style, 'border-style');
+    /*
+     | --------------------------------------------------
+     |  Color
+     | --------------------------------------------------
+     */
+        @include css-variable($surface-color, 'surface-color');
+        @include css-variable($text-color, 'text-color');
+        @include css-variable($color, 'color');
+}

@@ -1,0 +1,91 @@
+/*
+ | --------------------------------------------------
+ |  Base Color
+ | --------------------------------------------------
+ */
+    $base-color: (
+        'red'      : #D62929,
+        'orange'   : #FF7F00,
+        'sunset'   : #FFB000,
+        'yellow'   : #FFEA00,
+        'lime'     : #D9FF00,
+        'green'    : #5DFF00,
+        'emerald'  : #0CF370,
+        'tosca'    : #00FFAA,
+        'ocean'    : #00FFEA,
+        'sky'      : #00BFFF,
+        'blue'     : #1147EE,
+        'violet'   : #7B08F7,
+        'purple'   : #B200FF,
+        'fuschsia' : #D918E7,
+        'pink'     : #F00F9D,
+        'rose'     : #FF0059,
+        'steel'    : #727F8D,
+        'neutral'  : #777777,
+        'stone'    : #8A7C75
+    );
+/*
+| --------------------------------------------------
+|  Semantic Color
+| --------------------------------------------------
+*/
+    $semantic-color: (
+        'primary': (
+            'base'         : #F4F4F4,
+            'container'    : #1A1A1A,
+            'on-base'      : #000000,
+            'on-container' : #C4C4C4
+        ),
+        'secondary': (
+            'base'         : #00A873,
+            'container'    : #9FFFE3,
+            'on-base'      : #FFFFFF,
+            'on-container' : #004A35
+        ),
+        'tertiary': (
+            'base'         : #0073B7,
+            'container'    : #C3F2FF,
+            'on-base'      : #FFFFFF,
+            'on-container' : #00577C
+        ),
+        'error': (
+            'base'         : #E74C3C,
+            'container'    : #FFC8C8,
+            'on-base'      : #FFFFFF,
+            'on-container' : #9C0000
+        ),
+        'warning': (
+            'base'         : #FFD166,
+            'container'    : #FFF1C1,
+            'on-base'      : #7F4F00,
+            'on-container' : #8A6F00
+        ),
+        'success': (
+            'base'         : #28A745,
+            'container'    : #C8FFD8,
+            'on-base'      : #FFFFFF,
+            'on-container' : #004F2D
+        )
+    );
+/*
+| --------------------------------------------------
+|  Surface Color
+| --------------------------------------------------
+*/
+    $surface-color: (
+        'lowest'  : #000000,
+        'low'     : #111111,
+        'base'    : #1E1E1E,
+        'high'    : #2B2B2B,
+        'highest' : #3A3A3A
+    );
+/*
+| --------------------------------------------------
+|  Text Color
+| --------------------------------------------------
+*/
+    $text-color: (
+        'high' : #FFFFFF,
+        'base' : #CCCCCC,
+        'low'  : #888888
+    );

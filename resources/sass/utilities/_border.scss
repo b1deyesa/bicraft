@@ -1,0 +1,38 @@
+@use '../abstracts/mixins' as *;
+@use '../variables/border' as *;
+@use '../maps/border';
+
+/*
+ | --------------------------------------------------
+ |  Border Radius
+ | --------------------------------------------------
+ */
+    @include utility(
+        $default-prop  : border-radius,
+        $prefix        : 'rounded',
+        $default-value : 'sm',
+        $variable      : $border-radius,
+        $maps          : border.$border-radius
+    );
+/*
+ | --------------------------------------------------
+ |  Border Width
+ | --------------------------------------------------
+ */
+    @include utility(
+        $default-prop  : border-width,
+        $prefix        : 'border',
+        $default-value : '1',
+        $variable      : $border-width,
+        $maps          : border.$border-width
+    );
+/*
+ | --------------------------------------------------
+ |  Border Style
+ | --------------------------------------------------
+ */
+    @include utility(
+        $default-prop : border-style,
+        $prefix       : 'border-style',
+        $variable     : $border-style
+    );

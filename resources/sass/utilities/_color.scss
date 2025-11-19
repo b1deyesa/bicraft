@@ -1,0 +1,23 @@
+@use '../abstracts/mixins'as *;
+@use '../generates/color'as *;
+
+/*
+ | --------------------------------------------------
+ |  Background Color
+ | --------------------------------------------------
+ */
+    @include utility(
+        $default-prop : background-color,
+        $prefix       : 'bg',
+        $variable     : $color
+    );
+/*
+ | --------------------------------------------------
+ |  Text Color
+ | --------------------------------------------------
+ */
+    @include utility(
+        $default-prop : color,
+        $prefix       : 'text',
+        $variable     : $color
+    );

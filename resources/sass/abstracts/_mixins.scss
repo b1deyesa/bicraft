@@ -1,0 +1,52 @@
+@use 'sass:map';
+@use 'sass:string';
+@use 'functions' as *;
+@use '../variables/variables' as *;
+
+/*
+ | --------------------------------------------------
+ |  Utility
+ | --------------------------------------------------
+ */
+    @mixin utility($default-prop, $prefix, $variable, $default-value: false, $maps: false) {
+        @if $default-value {
+            .#{$prefix} {
+                #{$default-prop}: token($variable, $default-value);
+            }
+        }
+        @each $size, $value in $variable {
+            .#{$prefix}-#{$size} {
+                #{$default-prop}: if($variable == $font-family, string.unquote($value), $value);
+            }
+        }
+        @if $maps {
+            @if $default-value {
+                @each $position, $props in $maps {
+                    .#{$prefix}-#{$position} {
+                        @each $prop in $props {
+                            #{$prop}: token($variable, $default-value);
+                        }
+                    }
+                }
+            }
+            @each $size, $value in $variable {
+                @each $position, $props in $maps {
+                    .#{$prefix}-#{$position}-#{$size} {
+                        @each $prop in $props {
+                            #{$prop}: $value;
+                        }
+                    }
+                }
+            }
+        }
+    }
+/*
+ | --------------------------------------------------
+ |  CSS Variables
+ | --------------------------------------------------
+ */
+    @mixin css-variable($variable, $prefix) {
+        @each $key, $value in $variable {
+            #{to-css-variable($prefix, $key)}: #{$value};
+        }
+    }

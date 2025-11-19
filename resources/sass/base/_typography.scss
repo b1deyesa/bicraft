@@ -1,0 +1,338 @@
+@use '../variables/typography' as *;
+@use '../variables/spacing' as *;
+@use '../variables/border' as *;
+@use '../variables/color' as *;
+@use '../generates/color' as *;
+@use '../abstracts/functions' as *;
+
+/*
+ | --------------------------------------------------
+ |  Paragraf
+ | --------------------------------------------------
+ */
+    p {
+        line-height : token($line-height, 'loose');
+    }
+/*
+| --------------------------------------------------
+|  Heading 1
+| --------------------------------------------------
+*/
+    h1 {
+        font-family : token($font-family, 'serif');
+        font-size   : token($font-size, '4xl');
+        font-weight : token($font-weight, 'bold');
+        line-height : token($line-height, 'tight');
+        color       : token($text-color, 'high');
+    }
+/*
+| --------------------------------------------------
+|  Heading 2
+| --------------------------------------------------
+*/
+    h2 {
+        font-family : token($font-family, 'serif');
+        font-size   : token($font-size, '3xl');
+        font-weight : token($font-weight, 'bold');
+        line-height : token($line-height, 'tight');
+        color       : token($text-color, 'high');
+    }
+/*
+| --------------------------------------------------
+|  Heading 3
+| --------------------------------------------------
+*/
+    h3 {
+        font-family : token($font-family, 'serif');
+        font-size   : token($font-size, '2xl');
+        font-weight : token($font-weight, 'bold');
+        line-height : token($line-height, 'normal');
+        color       : token($text-color, 'high');
+    }
+/*
+| --------------------------------------------------
+|  Heading 4
+| --------------------------------------------------
+*/
+    h4 {
+        font-family : token($font-family, 'serif');
+        font-size   : token($font-size, 'xl');
+        font-weight : token($font-weight, 'bold');
+        line-height : token($line-height, 'normal');
+        color       : token($text-color, 'high');
+    }
+/*
+| --------------------------------------------------
+|  Heading 5
+| --------------------------------------------------
+*/
+    h5 {
+        font-family : token($font-family, 'serif');
+        font-size   : token($font-size, 'lg');
+        font-weight : token($font-weight, 'bold');
+        line-height : token($line-height, 'normal');
+        color       : token($text-color, 'high');
+    }
+/*
+| --------------------------------------------------
+|  Heading 6
+| --------------------------------------------------
+*/
+    h6 {
+        font-family : token($font-family, 'serif');
+        font-size   : token($font-size, 'md');
+        font-weight : token($font-weight, 'bold');
+        line-height : token($line-height, 'normal');
+        color       : token($text-color, 'high');
+    }
+/*
+| --------------------------------------------------
+|  Inline Text (Span)
+| --------------------------------------------------
+*/
+    span {
+    }
+/*
+| --------------------------------------------------
+|  Strong
+| --------------------------------------------------
+*/
+    strong {
+        font-weight : token($font-weight, 'bold');
+    }
+/*
+| --------------------------------------------------
+|  Emphasis
+| --------------------------------------------------
+*/
+    em {
+        font-style : token($font-style, 'oblique');
+    }
+/*
+| --------------------------------------------------
+|  Bold
+| --------------------------------------------------
+*/
+    b {
+        font-weight : token($font-weight, 'bold');
+    }
+/*
+| --------------------------------------------------
+|  Italic
+| --------------------------------------------------
+*/
+    i {
+        font-style : token($font-style, 'italic');
+    }
+/*
+| --------------------------------------------------
+|  Underline
+| --------------------------------------------------
+*/
+    u {
+        text-decoration : token($text-decoration, 'underline');
+    }
+/*
+| --------------------------------------------------
+|  Highlight (Mark)
+| --------------------------------------------------
+*/
+    mark {
+        color      : token($text-color, 'base');
+        background : token($color, 'neutral-500-40');
+    }
+/*
+| --------------------------------------------------
+|  Small Text
+| --------------------------------------------------
+*/
+    small {
+        font-size : token($font-size, 'sm');
+    }
+/*
+| --------------------------------------------------
+|  Abbreviation
+| --------------------------------------------------
+*/
+    abbr {
+        text-decoration : token($text-decoration, 'dotted');
+        cursor          : help;
+    }
+/*
+| --------------------------------------------------
+|  Citation
+| --------------------------------------------------
+*/
+    cite {
+        font-style : token($font-style, 'italic');
+        color      : token($text-color, 'low');
+    }
+/*
+| --------------------------------------------------
+|  Code
+| --------------------------------------------------
+*/
+    code {
+        font-family   : token($font-family, 'mono');
+        font-size     : token($font-size, 'sm');
+        padding       : token($spacing, 1) token($spacing, 2);
+        border-radius : token($border-radius, 'sm');
+        color         : token($text-color, 'base');
+        background    : token($color, 'neutral-500-30');
+    }
+/*
+| --------------------------------------------------
+|  Definition
+| --------------------------------------------------
+*/
+    dfn {
+        font-style          : token($font-style, 'italic');
+        border-style        : token($border-style, 'dashed');
+        border-bottom-width : token($border-width, 2);
+        border-color        : currentColor;
+        cursor              : help;
+    }
+/*
+| --------------------------------------------------
+|  Keyboard Input
+| --------------------------------------------------
+*/
+    kbd {
+        font-family   : token($font-family, 'mono');
+        padding       : token($spacing, 1) token($spacing, 2);
+        border-radius : token($border-radius, 'xs');
+        background    : token($color, 'neutral-500-50');
+    }
+/*
+| --------------------------------------------------
+|  Sample Output
+| --------------------------------------------------
+*/
+    samp {
+        font-family   : token($font-family, 'mono');
+        padding       : token($spacing, 1) token($spacing, 2);
+        border-radius : token($border-radius, 'xs');
+        color         : token($text-color, 'low');
+        background    : token($color, 'neutral-500-50');
+    }
+/*
+| --------------------------------------------------
+|  Subscript
+| --------------------------------------------------
+*/
+    sub {
+        font-size      : token($font-size, 'xs');
+        vertical-align : token($vertical-align, 'sub');
+    }
+/*
+| --------------------------------------------------
+|  Superscript
+| --------------------------------------------------
+*/
+    sup {
+        font-size      : token($font-size, 'xs');
+        vertical-align : token($vertical-align, 'super');
+    }
+/*
+| --------------------------------------------------
+|  Time
+| --------------------------------------------------
+*/
+    time {
+        font-style : token($font-style, 'italic');
+        color      : token($text-color, 'low');
+    }
+/*
+| --------------------------------------------------
+|  Variable
+| --------------------------------------------------
+*/
+    var {
+        font-style : token($font-style, 'italic');
+        color      : token($text-color, 'high');
+    }
+/*
+| --------------------------------------------------
+|  Blockquote
+| --------------------------------------------------
+*/
+    blockquote {
+        font-style        : token($font-style, 'italic');
+        line-height       : token($line-height, 'normal');
+        margin            : token($spacing, 2) 0;
+        padding-left      : token($spacing, 5);
+        border-style      : token($border-style, 'solid');
+        border-left-width : 4px;
+        border-color      : token($color, 'neutral-200-100');
+        color             : token($text-color, 'low');
+    }
+/*
+| --------------------------------------------------
+|  Quotation
+| --------------------------------------------------
+*/
+    q {
+        quotes     : "“" "”" "‘" "’";
+        font-style : token($font-style, 'italic');
+        color      : token($text-color, 'low');
+
+    }
+/*
+| --------------------------------------------------
+|  Preformatted Text
+| --------------------------------------------------
+*/
+    pre {
+        font-family   : token($font-family, 'mono');
+        line-height   : token($line-height, 'normal');
+        padding       : token($spacing, 5);
+        overflow      : auto;
+        border-radius : token($border-radius, 'sm');
+        border-style  : token($border-style, 'solid');
+        border-width  : token($border-width, 1);
+        border-color  : token($color, 'neutral-50-40');
+        color         : token($text-color, 'high');
+        background    : token($color, 'neutral-500-30');
+    }
+/*
+| --------------------------------------------------
+|  Line Break
+| --------------------------------------------------
+*/
+    br {
+    }
+/*
+| --------------------------------------------------
+|  Word Break Opportunity
+| --------------------------------------------------
+*/
+    wbr {
+    }
+/*
+| --------------------------------------------------
+|  Ruby Annotation
+| --------------------------------------------------
+*/
+    ruby {
+    }
+/*
+| --------------------------------------------------
+|  Ruby Text
+| --------------------------------------------------
+*/
+    rt {
+    }
+/*
+| --------------------------------------------------
+|  Ruby Parenthesis
+| --------------------------------------------------
+*/
+    rp {
+    }
+/*
+| --------------------------------------------------
+|  Data
+| --------------------------------------------------
+*/
+    data {
+    }

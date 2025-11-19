@@ -1,0 +1,36 @@
+@use '../abstracts/mixins' as *;
+@use '../variables/spacing' as *;
+@use '../maps/spacing';
+
+/*
+ | --------------------------------------------------
+ |  Margin
+ | --------------------------------------------------
+ */
+    @include utility(
+        $default-prop : margin,
+        $prefix       : 'margin',
+        $variable     : $spacing,
+        $maps         : spacing.$margin
+    );
+/*
+ | --------------------------------------------------
+ |  Padding
+ | --------------------------------------------------
+ */
+    @include utility(
+        $default-prop : padding,
+        $prefix       : 'padding',
+        $variable     : $spacing,
+        $maps         : spacing.$padding
+    );
+/*
+ | --------------------------------------------------
+ |  Gap
+ | --------------------------------------------------
+ */
+    @include utility(
+        $default-prop : gap,
+        $prefix       : 'gap',
+        $variable     : $spacing,
+    );

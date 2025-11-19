@@ -1,0 +1,26 @@
+/*
+ | --------------------------------------------------
+ |  Margin
+ | --------------------------------------------------
+ */
+    $margin: (
+        'top'    : 'margin-top',
+        'bottom' : 'margin-bottom',
+        'left'   : 'margin-left',
+        'right'  : 'margin-right',
+        'x'      : ('margin-left', 'margin-right'),
+        'y'      : ('margin-top', 'margin-bottom')
+    );
+/*
+ | --------------------------------------------------
+ |  Padding
+ | --------------------------------------------------
+ */
+    $padding: (
+        'top'    : 'padding-top',
+        'bottom' : 'padding-bottom',
+        'left'   : 'padding-left',
+        'right'  : 'padding-right',
+        'x'      : ('padding-left', 'padding-right'),
+        'y'      : ('padding-top', 'padding-bottom')
+    );

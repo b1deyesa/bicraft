@@ -1,0 +1,43 @@
+@use '../abstracts/mixins' as *;
+@use '../variables/position' as *;
+
+/*
+ | --------------------------------------------------
+ |  Top
+ | --------------------------------------------------
+ */
+    @include utility(
+        $default-prop : top,
+        $prefix       : 'top',
+        $variable     : $offset
+    );
+/*
+| --------------------------------------------------
+|  Bottom
+| --------------------------------------------------
+*/
+    @include utility(
+        $default-prop : bottom,
+        $prefix       : 'bottom',
+        $variable     : $offset
+    );
+/*
+| --------------------------------------------------
+|  Right
+| --------------------------------------------------
+*/
+    @include utility(
+        $default-prop : right,
+        $prefix       : 'right',
+        $variable     : $offset
+    );
+/*
+| --------------------------------------------------
+|  Left
+| --------------------------------------------------
+*/
+    @include utility(
+        $default-prop : left,
+        $prefix       : 'left',
+        $variable     : $offset
+    );

@@ -1,0 +1,38 @@
+@use 'sass:map';
+@use 'sass:math';
+@use 'sass:list';
+@use 'sass:color';
+@use '../abstracts/functions' as *;
+@use '../variables/color' as *;
+
+$color       : ();
+$tones       : ('50', '100', '200', '300', '400', '500', '600', '700', '800', '900', '950');
+$opacities   : (10, 20, 30, 40, 50, 60, 70, 80, 90, 100);
+$tone-count  : list.length($tones);
+$tone-middle : math.ceil(math.div($tone-count, 2));
+
+@each $name, $base in $base-color {
+	@for $i from 1 through $tone-count {
+		$tone: list.nth($tones, $i);
+		$amount: math.div(math.abs($i - $tone-middle) * 100%, $tone-count);
+
+		$color-amount: if(
+			$i < $tone-middle,
+			color.adjust($base, $lightness: $amount),
+			if($i == $tone-middle, $base, color.adjust($base, $lightness: -$amount))
+		);
+
+		$color: map.merge($color, (
+			'#{$name}-#{$tone}': $color-amount
+		));
+
+		@each $opacity in $opacities {
+			$key-name: '#{$name}-#{$tone}-#{$opacity}';
+			$color-opacity: rgba($color-amount, math.div($opacity, 100));
+
+			$color: map.merge($color, (
+				$key-name: $color-opacity
+			));
+		}
+	}
+}
