@@ -24,3 +24,25 @@
         $variable     : $sizing,
         $maps         : sizing.$height
     );
+/*
+ | --------------------------------------------------
+ |  View Height
+ | --------------------------------------------------
+ */
+    @include utility(
+        $default-prop : height,
+        $prefix       : 'vh',
+        $variable     : $view-height,
+        $maps         : sizing.$height
+    );
+/*
+ | --------------------------------------------------
+ |  View Width
+ | --------------------------------------------------
+ */
+    @include utility(
+        $default-prop : width,
+        $prefix       : 'vw',
+        $variable     : $view-width,
+        $maps         : sizing.$width
+    );
